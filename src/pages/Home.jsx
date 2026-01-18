@@ -9,7 +9,7 @@ const Home = () => {
             <section className="hero-section">
                 <div className="container hero-container">
                     <div className="hero-content">
-                        <span className="category-tag">Vizyon</span>
+                        <span className="category-tag">VİZYON</span>
                         <h1 className="hero-title">
                             Geleceği, Bugünden Tasarlayan <br />
                             <span className="text-secondary">Strateji Merkezi.</span>

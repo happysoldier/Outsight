@@ -28,7 +28,46 @@ const Navbar = () => {
                     </Link>
 
                     <div className="nav-menu">
-                        <Link to="/about" className="nav-item">Hakkımızda</Link>
+                        <div className="nav-item-wrapper group">
+                            <Link to="/about" className="nav-item">Hakkımızda</Link>
+                            <div className="mega-menu">
+                                <div className="container">
+                                    <div className="mega-menu-grid">
+                                        <div className="mega-column">
+                                            <span className="mega-header">Biz Kimiz</span>
+                                            <ul className="mega-list">
+                                                <li><Link to="/about">100 Yıllık Etki (Örnek)</Link></li>
+                                                <li><Link to="/about">Hikayemiz</Link></li>
+                                                <li><Link to="/about">Kültür ve Değerler</Link></li>
+                                                <li><Link to="/about">Liderlik Ekibi</Link></li>
+                                            </ul>
+                                        </div>
+                                        <div className="mega-column">
+                                            <span className="mega-header">Neden Outsight</span>
+                                            <ul className="mega-list">
+                                                <li><Link to="/about">Stratejik Ortaklıklar</Link></li>
+                                                <li><Link to="/about">Sürdürülebilirlik</Link></li>
+                                            </ul>
+                                        </div>
+                                        <div className="mega-column">
+                                            <span className="mega-header">Etki Ağları</span>
+                                            <ul className="mega-list">
+                                                <li><Link to="/blog">Outsight Öngörü</Link></li>
+                                                <li><Link to="/services">Outsight İnovasyon</Link></li>
+                                            </ul>
+                                        </div>
+                                        <div className="mega-column">
+                                            <span className="mega-header">Daha Fazlası</span>
+                                            <ul className="mega-list">
+                                                <li><Link to="/about">Mezunlar</Link></li>
+                                                <li><Link to="/contact">Ofisler</Link></li>
+                                                <li><Link to="/about">Medya</Link></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <Link to="/services" className="nav-item">Hizmetler</Link>
                         <Link to="/blog" className="nav-item">Öngörüler</Link>
                         <Link to="/contact" className="nav-item">İletişim</Link>

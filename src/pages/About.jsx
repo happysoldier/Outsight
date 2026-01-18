@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import aboutImage from '../assets/about-meeting.png';
 
 const About = () => {
     return (
@@ -33,7 +34,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="content-image">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="Outsight Ofis" />
+                            <img src={aboutImage} alt="Outsight Ofis" />
                         </div>
                     </div>
                 </div>

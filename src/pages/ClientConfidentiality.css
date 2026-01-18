@@ -1,0 +1,65 @@
+.legal-content {
+    max-width: 680px;
+    /* Removed margin: 0 auto to align with the header on the left */
+    margin-top: 2rem;
+    font-size: 1rem;
+    /* Reduced to standard 1rem */
+    font-weight: 300;
+    /* Thinner text */
+    color: var(--color-text-primary);
+    line-height: 1.5;
+}
+
+.legal-content p {
+    margin-bottom: 2rem;
+}
+
+.legal-content h2 {
+    font-size: 1.75rem;
+    /* Reduced from 2rem */
+    margin-top: 2.5rem;
+    /* Approx 1.5 lines */
+    margin-bottom: 1.5rem;
+    /* Approx 1 line */
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.legal-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.legal-content li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.quote-box {
+    background-color: transparent;
+    padding: 2rem 0;
+    margin: 3rem 0;
+    border-left: none;
+    /* Removed the side border style */
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.quote-box h3 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin: 0;
+    font-style: italic;
+    color: var(--color-text-primary);
+}
+
+.legal-footer-note {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}

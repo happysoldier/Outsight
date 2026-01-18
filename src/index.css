@@ -1,0 +1,198 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Colors - Kearney Style (Deep Red / Black / White) */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F4F4F4;
+  /* Light Grey for section breaks */
+  --color-text-primary: #1A1A1A;
+  /* Near Black */
+  --color-text-secondary: #555555;
+  /* Dark Grey */
+  --color-accent: #A6192E;
+  /* Kearney-like Deep Red */
+  --color-accent-hover: #8A1225;
+  --color-border: #E5E5E5;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Graphik Web', 'Inter', sans-serif;
+  /* Unified to Sans/Graphik as requested */
+  /* For Headings */
+  --font-sans: 'Graphik Web', 'Inter', sans-serif;
+  /* For Body */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+  /* Large Editorial Headings */
+
+  --font-bold: 700;
+  --font-medium: 500;
+
+  /* Spacing */
+  --container-width: 100%;
+  /* 100% with padding */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  /* Mobile default padding */
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --spacing-lg: 12rem;
+    /* 4x increase (approx 12rem) for desktop */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-sans);
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Editorial Buttons - Sharp, Solid */
+.btn {
+  display: inline-block;
+  background: var(--color-text-primary);
+  /* Black buttons usually */
+  color: var(--color-white);
+  padding: 0.8rem 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0;
+  /* Sharp edges */
+  transition: all var(--transition-normal);
+  border: 1px solid var(--color-text-primary);
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-text-primary);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-text-primary);
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-accent);
+  font-weight: 600;
+  position: relative;
+}
+
+.btn-link::after {
+  content: '→';
+  margin-left: 5px;
+  transition: transform var(--transition-fast);
+  display: inline-block;
+}
+
+.btn-link:hover::after {
+  transform: translateX(4px);
+}
+
+/* Common Section Styles */
+.section {
+  padding: var(--spacing-2xl) 0;
+}
+
+.section-grey {
+  background-color: var(--color-bg-secondary);
+}
+
+.section-header {
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 2rem 0;
+}
+
+/* Helper to remove glass effects if any remain */
+.glass {
+  background: none;
+  backdrop-filter: none;
+  border: none;
+}

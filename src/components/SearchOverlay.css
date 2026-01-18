@@ -1,0 +1,126 @@
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-primary);
+    line-height: 1;
+    transition: transform var(--transition-fast);
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+    color: var(--color-accent);
+}
+
+.search-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.search-input {
+    width: 100%;
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    border: none;
+    border-bottom: 2px solid var(--color-border);
+    padding: 1rem 0;
+    background: transparent;
+    color: var(--color-text-primary);
+    margin-bottom: 3rem;
+}
+
+.search-input:focus {
+    outline: none;
+    border-bottom-color: var(--color-accent);
+}
+
+.search-input::placeholder {
+    color: var(--color-border);
+}
+
+.results-list {
+    list-style: none;
+}
+
+.result-item {
+    border-bottom: 1px solid var(--color-bg-secondary);
+}
+
+.result-item a {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    text-decoration: none;
+    transition: padding-left var(--transition-fast);
+}
+
+.result-item a:hover {
+    padding-left: 1rem;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.result-type {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-accent);
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.result-title {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: var(--color-text-primary);
+}
+
+.no-results {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        font-size: 2rem;
+    }
+
+    .result-item a {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .result-type {
+        margin-bottom: 0.5rem;
+    }
+}

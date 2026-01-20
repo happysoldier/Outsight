@@ -18,7 +18,7 @@
     gap: 4rem;
     align-items: center;
     padding-bottom: 4rem;
-    border-bottom: 1px solid #E2E2E2;
+    border-bottom: 2px solid #E2E2E2;
 }
 
 .hero-left h1 {
@@ -103,7 +103,7 @@
 /* Contact Info */
 .bio-contact-info {
     padding-top: 3rem;
-    border-top: 1px solid var(--color-border);
+    border-top: 2px solid #E2E2E2;
 }
 
 .bio-contact-info h2 {

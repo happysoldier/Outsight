@@ -37,6 +37,7 @@ export const peopleData = {
         location: "Istanbul, Turkey",
         email: "sener.cavga@outsight.com.tr",
         phone: "+90 212 555 0100",
+        linkedin: "https://www.linkedin.com/in/%C5%9Fener-%C3%A7avga-12031139/",
         image: senerCavgaImage,
         quote: "Hazır reçetelerle değil, açık bir zihin ve cesur adımlarla ilerlemeyi seviyorum. Benim için her proje, alışılmışın dışına çıkıp sektöre imzamı atmak için yeni bir fırsat.",
         bio: [

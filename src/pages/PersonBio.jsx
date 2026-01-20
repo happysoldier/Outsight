@@ -29,7 +29,9 @@ const PersonBio = () => {
                             <p className="hero-title">{personData.title}</p>
                             <div className="hero-actions">
                                 <a href={`mailto:${personData.email}`} className="btn-outline">İletişim</a>
-                                <a href="#" className="btn-outline">LinkedIn</a>
+                                {personData.linkedin && (
+                                    <a href={personData.linkedin} target="_blank" rel="noopener noreferrer" className="btn-outline">LinkedIn</a>
+                                )}
                             </div>
                         </div>
                         <div className="hero-right">

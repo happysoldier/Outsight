@@ -137,8 +137,7 @@
 
 /* Sidebar - Right */
 .bio-sidebar {
-    position: sticky;
-    top: 120px;
+    /* Removed sticky positioning - scrolls with content */
 }
 
 .sidebar-section {

@@ -98,8 +98,6 @@ const PersonBio = () => {
                 </div>
             </section>
         </div>
-            </section >
-        </div >
     );
 };
 

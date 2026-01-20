@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
+import { getPersonById } from '../data/peopleData';
 import './PersonBio.css';
 
 const PersonBio = () => {
@@ -9,28 +10,13 @@ const PersonBio = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    // Sample data - can be replaced with dynamic data later
-    const personData = {
-        name: "Adil Khan",
-        title: "Partner, Chicago",
-        location: "Chicago, Illinois",
-        email: "adil.khan@outsight.com.tr",
-        phone: "+1 312 555 0100",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
-        bio: [
-            "Adil Khan is a Partner in Outsight's Chicago office and leads the firm's Consumer Goods and Retail practice in North America. He specializes in growth strategy, digital transformation, and operational excellence across the consumer sector.",
-            "With over 15 years of experience, Adil has advised leading global brands on market entry strategies, organizational redesign, and performance improvement initiatives. His work spans diverse geographies including North America, Europe, and Asia Pacific.",
-            "Prior to joining Outsight, Adil held senior strategy roles at Fortune 500 companies where he led large-scale transformation programs. He has deep expertise in e-commerce, omnichannel retail, and consumer analytics.",
-            "Adil holds an MBA from Harvard Business School and a Bachelor's degree in Engineering from MIT. He is a frequent speaker at industry conferences on topics related to consumer behavior and digital disruption."
-        ],
-        expertise: [
-            "Consumer Goods & Retail",
-            "Growth Strategy",
-            "Digital Transformation",
-            "Operational Excellence",
-            "E-commerce & Omnichannel"
-        ]
-    };
+    // Get person data dynamically
+    const personData = getPersonById(name);
+
+    // If person not found, redirect to people list
+    if (!personData) {
+        return <Navigate to="/about/people" replace />;
+    }
 
     return (
         <div className="person-bio-page">

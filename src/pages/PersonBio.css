@@ -1,118 +1,94 @@
 .person-bio-page {
-    padding-top: 120px;
-    padding-bottom: 6rem;
+    padding-top: 80px;
     min-height: 100vh;
 }
 
-.bio-layout {
+/* Hero Section */
+.bio-hero {
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.hero-grid {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 5rem;
-    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
 }
 
-/* Left Sidebar */
-.bio-sidebar {
-    position: sticky;
-    top: 120px;
+.hero-left h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
 }
 
-.bio-photo {
-    margin-bottom: 2rem;
-    overflow: hidden;
-    border-radius: 2px;
+.hero-title {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
 }
 
-.bio-photo img {
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-outline {
+    padding: 0.75rem 2rem;
+    border: 2px solid var(--color-accent);
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-outline:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.hero-right img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
 
-.bio-contact {
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
+/* Bio Content Section */
+.bio-section {
+    padding: 5rem 0;
 }
 
-.bio-contact h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--color-text-primary);
-}
-
-.contact-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-bottom: 1.25rem;
-}
-
-.contact-label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--color-text-secondary);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.contact-value {
-    font-size: 1rem;
-    color: var(--color-text-primary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.contact-value:hover {
-    color: var(--color-accent);
-}
-
-/* Right Content */
-.bio-content {
-    max-width: 800px;
-}
-
-.bio-header {
-    margin-bottom: 3rem;
-}
-
-.bio-header h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-    color: var(--color-text-primary);
-}
-
-.bio-title {
-    font-size: 1.25rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1.5rem;
-    font-weight: 400;
+.bio-content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .bio-text {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .bio-text p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 1.125rem;
+    line-height: 1.8;
     color: var(--color-text-primary);
     margin-bottom: 1.5rem;
     font-weight: 300;
 }
 
 .bio-expertise {
-    padding-top: 2rem;
+    padding-top: 3rem;
     border-top: 1px solid var(--color-border);
+    margin-bottom: 4rem;
 }
 
 .bio-expertise h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: var(--color-text-primary);
@@ -121,9 +97,9 @@
 .bio-expertise ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .bio-expertise li {
@@ -141,34 +117,96 @@
     font-weight: bold;
 }
 
+/* Contact Info */
+.bio-contact-info {
+    padding-top: 3rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.bio-contact-info h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--color-text-primary);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-value {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-value:hover {
+    color: var(--color-accent);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
-    .bio-layout {
-        grid-template-columns: 300px 1fr;
+    .hero-grid {
         gap: 3rem;
+    }
+
+    .hero-left h1 {
+        font-size: 3rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .person-bio-page {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
-    .bio-layout {
+    .hero-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .bio-sidebar {
-        position: relative;
-        top: 0;
+    .hero-left h1 {
+        font-size: 2.5rem;
     }
 
-    .bio-photo {
-        max-width: 300px;
+    .hero-title {
+        font-size: 1.25rem;
     }
 
-    .bio-header h1 {
-        font-size: 2rem;
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .btn-outline {
+        text-align: center;
+    }
+
+    .bio-expertise ul {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
     }
 }

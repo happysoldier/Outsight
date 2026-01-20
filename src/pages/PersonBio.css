@@ -53,8 +53,8 @@
 }
 
 .hero-right img {
-    width: 100%;
-    height: auto;
+    width: 359px;
+    height: 276px;
     display: block;
     object-fit: cover;
 }

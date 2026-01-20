@@ -46,6 +46,9 @@ const PersonBio = () => {
                         {/* Main Content - Left */}
                         <div className="bio-main">
                             <div className="bio-text">
+                                {personData.quote && (
+                                    <p className="bio-quote">{personData.quote}</p>
+                                )}
                                 {personData.bio.map((paragraph, index) => (
                                     <p key={index}>{paragraph}</p>
                                 ))}

@@ -100,6 +100,15 @@
     font-weight: 300;
 }
 
+.bio-text .bio-quote {
+    font-size: 1.75rem;
+    line-height: 1.4;
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    font-family: var(--font-serif);
+}
+
 /* Contact Info */
 .bio-contact-info {
     padding-top: 3rem;

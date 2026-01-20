@@ -9,6 +9,7 @@ import logo from '../assets/logo.png';
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [megaMenuOpen, setMegaMenuOpen] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -19,6 +20,11 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    // Close mega menu on route change
+    useEffect(() => {
+        setMegaMenuOpen(false);
+    }, [location]);
+
     return (
         <>
             <nav className={`navbar ${scrolled ? 'scrolled' : ''} `}>
@@ -28,7 +34,11 @@ const Navbar = () => {
                     </Link>
 
                     <div className="nav-menu">
-                        <div className="nav-item-wrapper group">
+                        <div
+                            className={`nav-item-wrapper ${megaMenuOpen ? 'menu-open' : ''}`}
+                            onMouseEnter={() => setMegaMenuOpen(true)}
+                            onMouseLeave={() => setMegaMenuOpen(false)}
+                        >
                             <Link to="/about" className="nav-item">Hakkımızda</Link>
                             <div className="mega-menu">
                                 <div className="container">

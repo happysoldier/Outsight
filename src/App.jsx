@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import ClientConfidentiality from './pages/ClientConfidentiality';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import PersonBio from './pages/PersonBio';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about/people/:name" element={<PersonBio />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />

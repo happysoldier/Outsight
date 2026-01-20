@@ -1,0 +1,174 @@
+.person-bio-page {
+    padding-top: 120px;
+    padding-bottom: 6rem;
+    min-height: 100vh;
+}
+
+.bio-layout {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+/* Left Sidebar */
+.bio-sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.bio-photo {
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.bio-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.bio-contact {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.bio-contact h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-text-primary);
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-value {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-value:hover {
+    color: var(--color-accent);
+}
+
+/* Right Content */
+.bio-content {
+    max-width: 800px;
+}
+
+.bio-header {
+    margin-bottom: 3rem;
+}
+
+.bio-header h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+.bio-title {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.bio-text {
+    margin-bottom: 3rem;
+}
+
+.bio-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
+
+.bio-expertise {
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.bio-expertise h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--color-text-primary);
+}
+
+.bio-expertise ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.bio-expertise li {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.bio-expertise li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .bio-layout {
+        grid-template-columns: 300px 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .person-bio-page {
+        padding-top: 100px;
+    }
+
+    .bio-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .bio-sidebar {
+        position: relative;
+        top: 0;
+    }
+
+    .bio-photo {
+        max-width: 300px;
+    }
+
+    .bio-header h1 {
+        font-size: 2rem;
+    }
+}

@@ -28,7 +28,7 @@ export const peopleData = {
     'sener-cavga': {
         id: 'sener-cavga',
         name: "Şener Çavga",
-        title: "Partner, Istanbul",
+        title: "Direktör, Istanbul",
         location: "Istanbul, Turkey",
         email: "sener.cavga@outsight.com.tr",
         phone: "+90 212 555 0100",

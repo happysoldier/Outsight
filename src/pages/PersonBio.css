@@ -5,7 +5,11 @@
 
 /* Hero Section */
 .bio-hero {
-    padding: 6rem 0 4rem;
+    padding-top: 6rem;
+}
+
+.bio-hero .container {
+    padding-bottom: 4rem;
     border-bottom: 1px solid #E2E2E2;
 }
 

@@ -140,10 +140,6 @@
 }
 
 /* Sidebar - Right */
-.bio-sidebar {
-    /* Removed sticky positioning - scrolls with content */
-}
-
 .sidebar-section {
     margin-bottom: 3rem;
 }

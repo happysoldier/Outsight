@@ -36,7 +36,7 @@ const Navbar = () => {
                                         <div className="mega-column">
                                             <span className="mega-header">Biz Kimiz</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/about">100 Yıllık Etki (Örnek)</Link></li>
+                                                <li><Link to="/about/people">İnsanlarımız</Link></li>
                                                 <li><Link to="/about">Hikayemiz</Link></li>
                                                 <li><Link to="/about">Kültür ve Değerler</Link></li>
                                                 <li><Link to="/about">Liderlik Ekibi</Link></li>

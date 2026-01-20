@@ -53,8 +53,11 @@
 }
 
 .hero-right img {
-    width: 359px;
-    height: 276px;
+    width: 100%;
+    max-width: 486px;
+    min-width: 359px;
+    height: auto;
+    aspect-ratio: 486 / 374;
     display: block;
     object-fit: cover;
 }

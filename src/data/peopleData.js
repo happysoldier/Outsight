@@ -45,11 +45,13 @@ export const peopleData = {
             "Şener holds an MBA from Harvard Business School and a Bachelor's degree in Engineering from MIT. He is a frequent speaker at industry conferences on topics related to consumer behavior and digital disruption."
         ],
         expertise: [
-            "Consumer Goods & Retail",
-            "Growth Strategy",
-            "Digital Transformation",
-            "Operational Excellence",
-            "E-commerce & Omnichannel"
+            "Dijital Dönüşüm",
+            "İş Zekası"
+        ],
+        industries: [
+            "Gıda",
+            "İçecek",
+            "Bilgisayar"
         ]
     }
 };

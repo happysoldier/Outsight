@@ -50,24 +50,6 @@ const PersonBio = () => {
                                     <p key={index}>{paragraph}</p>
                                 ))}
                             </div>
-
-                            <div className="bio-contact-info">
-                                <h2>İletişim Bilgileri</h2>
-                                <div className="contact-grid">
-                                    <div className="contact-item">
-                                        <span className="contact-label">Ofis</span>
-                                        <span className="contact-value">{personData.location}</span>
-                                    </div>
-                                    <div className="contact-item">
-                                        <span className="contact-label">E-posta</span>
-                                        <a href={`mailto:${personData.email}`} className="contact-value">{personData.email}</a>
-                                    </div>
-                                    <div className="contact-item">
-                                        <span className="contact-label">Telefon</span>
-                                        <a href={`tel:${personData.phone}`} className="contact-value">{personData.phone}</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         {/* Sidebar - Right */}
@@ -95,9 +77,29 @@ const PersonBio = () => {
                             )}
                         </aside>
                     </div>
+
+                    <div className="bio-contact-info">
+                        <h2>İletişim Bilgileri</h2>
+                        <div className="contact-grid">
+                            <div className="contact-item">
+                                <span className="contact-label">Ofis</span>
+                                <span className="contact-value">{personData.location}</span>
+                            </div>
+                            <div className="contact-item">
+                                <span className="contact-label">E-posta</span>
+                                <a href={`mailto:${personData.email}`} className="contact-value">{personData.email}</a>
+                            </div>
+                            <div className="contact-item">
+                                <span className="contact-label">Telefon</span>
+                                <a href={`tel:${personData.phone}`} className="contact-value">{personData.phone}</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
+            </section >
+        </div >
     );
 };
 

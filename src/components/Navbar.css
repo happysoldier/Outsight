@@ -127,21 +127,19 @@
     top: 70px;
 }
 
-/* Show Mega Menu on Hover or when menu-open class is present */
+/* Show Mega Menu only when menu-open class is present */
 .nav-item-wrapper {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.nav-item-wrapper:hover .mega-menu,
 .nav-item-wrapper.menu-open .mega-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-.nav-item-wrapper:hover .nav-item,
 .nav-item-wrapper.menu-open .nav-item {
     color: var(--color-accent);
 }

@@ -46,32 +46,32 @@ const Navbar = () => {
                                         <div className="mega-column">
                                             <span className="mega-header">Biz Kimiz</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/about/people">İnsanlarımız</Link></li>
-                                                <li><Link to="/about">Hikayemiz</Link></li>
-                                                <li><Link to="/about">Kültür ve Değerler</Link></li>
-                                                <li><Link to="/about">Liderlik Ekibi</Link></li>
+                                                <li><Link to="/about/people" onClick={() => setMegaMenuOpen(false)}>İnsanlarımız</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Hikayemiz</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Kültür ve Değerler</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Liderlik Ekibi</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mega-column">
                                             <span className="mega-header">Neden Outsight</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/about">Stratejik Ortaklıklar</Link></li>
-                                                <li><Link to="/about">Sürdürülebilirlik</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Stratejik Ortaklıklar</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Sürdürülebilirlik</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mega-column">
                                             <span className="mega-header">Etki Ağları</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/blog">Outsight Öngörü</Link></li>
-                                                <li><Link to="/services">Outsight İnovasyon</Link></li>
+                                                <li><Link to="/blog" onClick={() => setMegaMenuOpen(false)}>Outsight Öngörü</Link></li>
+                                                <li><Link to="/services" onClick={() => setMegaMenuOpen(false)}>Outsight İnovasyon</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mega-column">
                                             <span className="mega-header">Daha Fazlası</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/about">Mezunlar</Link></li>
-                                                <li><Link to="/contact">Ofisler</Link></li>
-                                                <li><Link to="/about">Medya</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Mezunlar</Link></li>
+                                                <li><Link to="/contact" onClick={() => setMegaMenuOpen(false)}>Ofisler</Link></li>
+                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Medya</Link></li>
                                             </ul>
                                         </div>
                                     </div>

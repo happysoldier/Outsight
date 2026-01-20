@@ -10,6 +10,7 @@ import ClientConfidentiality from './pages/ClientConfidentiality';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import PersonBio from './pages/PersonBio';
 import PeopleList from './pages/PeopleList';
+import PersonContactBio from './pages/PersonContactBio';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import './index.css';
@@ -26,12 +27,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/about/people" element={<PeopleList />} />
             <Route path="/about/people/:name" element={<PersonBio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact/bio/:name" element={<PersonContactBio />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/client-confidentiality" element={<ClientConfidentiality />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />

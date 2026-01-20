@@ -28,6 +28,16 @@ export const peopleData = {
             "Finansal Hizmetler",
             "Tüketici Ürünleri",
             "Perakende"
+        ],
+        insights: [
+            {
+                title: "Perakende Sektöründe Dijital Dönüşümün Geleceği",
+                link: "/blog/perakende-dijital-donusum"
+            },
+            {
+                title: "Tüketici Davranışlarında Pandemi Sonrası Değişimler",
+                link: "/blog/tuketici-davranislari"
+            }
         ]
     },
     'sener-cavga': {
@@ -54,6 +64,16 @@ export const peopleData = {
             "Gıda",
             "İçecek",
             "Bilgisayar"
+        ],
+        insights: [
+            {
+                title: "Yapay Zeka Destekli Stratejik Karar Alma Süreçleri",
+                link: "/blog/ai-stratejik-karar"
+            },
+            {
+                title: "Türkiye'de E-ticaretin Yeni Dönemi: Trendler ve Fırsatlar",
+                link: "/blog/turkiye-ecommerce-trendleri"
+            }
         ]
     }
 };

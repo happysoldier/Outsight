@@ -24,6 +24,10 @@
     color: var(--color-text-primary);
 }
 
+.hero-left {
+    margin-top: -50px;
+}
+
 .hero-title {
     font-size: 1.5rem;
     color: var(--color-text-secondary);

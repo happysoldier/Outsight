@@ -23,6 +23,11 @@ export const peopleData = {
             "Digital Transformation",
             "Operational Excellence",
             "E-commerce & Omnichannel"
+        ],
+        industries: [
+            "Financial Services",
+            "Consumer Goods",
+            "Retail"
         ]
     },
     'sener-cavga': {

@@ -9,8 +9,7 @@
 }
 
 .bio-hero .container {
-    padding-bottom: 4rem;
-    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 0;
 }
 
 .hero-grid {
@@ -18,6 +17,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #E2E2E2;
 }
 
 .hero-left h1 {

@@ -6,7 +6,7 @@ import hakanMisirliImage from '../assets/hakan-misirli.png';
 export const peopleData = {
     'hakan-misirli': {
         id: 'hakan-misirli',
-        name: "Hakan Mısırlı",
+        name: "M.Hakan Mısırlı",
         title: "Co-Founder, Istanbul",
         location: "Istanbul, Turkey",
         email: "hakan.misirli@outsight.com.tr",

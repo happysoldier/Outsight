@@ -1,8 +1,40 @@
 // People data for the organization
 import adilKhanImage from '../assets/about-meeting.png';
 import senerCavgaImage from '../assets/sener-cavga.jpg';
+import hakanMisirliImage from '../assets/hakan-misirli.png';
 
 export const peopleData = {
+    'hakan-misirli': {
+        id: 'hakan-misirli',
+        name: "Hakan Mısırlı",
+        title: "Co-Founder, Istanbul",
+        location: "Istanbul, Turkey",
+        email: "hakan.misirli@outsight.com.tr",
+        phone: "+90 212 555 0100",
+        image: hakanMisirliImage,
+        bio: [
+            "Hakan Mısırlı, Outsight'ın kurucu ortaklarından biridir ve operasyonel mükemmellik ile saha yönetimi konularında derin uzmanlığa sahiptir. Özellikle gıda ve içecek sektörlerinde satış ekiplerinin yönetimi ve stratejik gelişim süreçlerinde öncü bir rol üstlenmektedir.",
+            "Profesyonel kariyeri boyunca metal ve gıda endüstrilerinde büyük ölçekli projeleri yönetmiş olan Hakan, saha operasyonlarının verimliliğini artırma ve satış kanalları oluşturma konularında geniş bir deneyime sahiptir.",
+            "Outsight bünyesinde, müşteri projelerinin hayata geçirilmesi ve saha ekiplerinin mobilizasyonu süreçlerine liderlik ederek, teorik stratejilerin pratik ve başarılı sonuçlara dönüşmesini sağlamaktadır."
+        ],
+        expertise: [
+            "Saha ve satış ekibi yönetimi",
+            "Operasyonel Mükemmellik",
+            "Satış Stratejileri"
+        ],
+        industries: [
+            "Gıda",
+            "İçecek",
+            "Metal",
+            "Taze Et"
+        ],
+        insights: [
+            {
+                title: "Saha Ekiplerinde Verimlilik Artırma Yöntemleri",
+                link: "/blog/saha-ekibi-verimlilik"
+            }
+        ]
+    },
     'adil-khan': {
         id: 'adil-khan',
         name: "Adil Khan",

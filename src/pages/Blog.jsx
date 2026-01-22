@@ -101,13 +101,13 @@ const Blog = () => {
                 <div className="container">
                     <div className="filter-wrapper">
                         <button className="filter-dropdown">
-                            Industries and services
+                            ENDUSTRİ ve SERVİSLER
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M6 9l6 6 6-6" />
                             </svg>
                         </button>
                         <button className="filter-dropdown">
-                            Topics
+                            KONULAR
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M6 9l6 6 6-6" />
                             </svg>

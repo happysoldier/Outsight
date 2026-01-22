@@ -201,7 +201,7 @@
 
 .authors-title {
     font-family: var(--font-sans);
-    font-size: 36px;
+    font-size: 36px !important;
     font-weight: 300;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
@@ -225,7 +225,7 @@
     height: 120px;
     margin-bottom: 1rem;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 .author-image-wrapper img {

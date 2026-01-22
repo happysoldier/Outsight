@@ -56,6 +56,24 @@ const BlogPost = () => {
                         {post.content ? post.content : (
                             <p>İçerik hazırlanıyor...</p>
                         )}
+
+                        {post.authors && post.authors.length > 0 && (
+                            <div className="post-authors-section">
+                                <hr className="authors-separator" />
+                                <h3 className="authors-title">Yazarlar</h3>
+                                <div className="authors-grid">
+                                    {post.authors.map((author, index) => (
+                                        <div key={index} className="author-card">
+                                            <div className="author-image-wrapper">
+                                                <img src={author.image} alt={author.name} />
+                                            </div>
+                                            <h4 className="author-name">{author.name}</h4>
+                                            <p className="author-title">{author.title}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </article>

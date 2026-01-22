@@ -1,5 +1,7 @@
 import digitalMarketingHero from '../assets/digital-marketing-hero.png';
 import digitalMarketingContent from '../assets/digital-marketing-content.png';
+import hakanMisirli from '../assets/hakan-misirli.png';
+import senerCavga from '../assets/sener-cavga.jpg';
 
 export const blogPosts = [
     {
@@ -51,7 +53,19 @@ export const blogPosts = [
                     “Uzmanlık, karmaşıklığı basitliğe; veriyi ise kâra dönüştürme sanatıdır.”
                 </blockquote>
             </>
-        )
+        ),
+        authors: [
+            {
+                name: "Hakan Mısırlı",
+                title: "Kurucu Ortak",
+                image: hakanMisirli
+            },
+            {
+                name: "Şener Çavga",
+                title: "Teknoloji Danışmanı",
+                image: senerCavga
+            }
+        ]
     },
     {
         id: 1,

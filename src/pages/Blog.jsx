@@ -9,7 +9,8 @@ const blogPosts = [
         author: "Emre Yazıcı",
         category: "Dijital Dönüşüm",
         image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-        slug: "hepimiz-birimiz-birimiz-hepimiz-icin"
+        slug: "hepimiz-birimiz-birimiz-hepimiz-icin",
+        date: "2026-01-22"
     },
     {
         id: 2,
@@ -17,7 +18,8 @@ const blogPosts = [
         author: "Levent Kasman",
         category: "İş Dünyası",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-        slug: "bakkaldan-algoritmaya"
+        slug: "bakkaldan-algoritmaya",
+        date: "2026-01-20"
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ const blogPosts = [
         author: "Hamit Saçan",
         category: "Strateji",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-        slug: "2026-is-dunyasi-icin-yuksek-adaptasyon"
+        slug: "2026-is-dunyasi-icin-yuksek-adaptasyon",
+        date: "2026-01-18"
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ const blogPosts = [
         author: "Murat Tolga Eser",
         category: "Satın Alma Yönetimi",
         image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop",
-        slug: "turkiye-de-gida-isletmelerinde-genel-yaklasim"
+        slug: "turkiye-de-gida-isletmelerinde-genel-yaklasim",
+        date: "2026-01-15"
     },
     {
         id: 5,
@@ -41,7 +45,8 @@ const blogPosts = [
         author: "Hamit Saçan",
         category: "Tedarik Zinciri",
         image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1974&auto=format&fit=crop",
-        slug: "merkezi-satin-almaya-gecis-yapalim-ama-nasil"
+        slug: "merkezi-satin-almaya-gecis-yapalim-ama-nasil",
+        date: "2026-01-10"
     },
     {
         id: 6,
@@ -49,7 +54,8 @@ const blogPosts = [
         author: "Emre Yazıcı",
         category: "Check Up",
         image: "https://images.unsplash.com/photo-1494412651409-ae5e0dce1c0d?q=80&w=2070&auto=format&fit=crop",
-        slug: "tedarik-zinciri-formalite-mi"
+        slug: "tedarik-zinciri-formalite-mi",
+        date: "2026-01-05"
     },
     {
         id: 7,
@@ -57,7 +63,8 @@ const blogPosts = [
         author: "Admin",
         category: "Pazarlama",
         image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop",
-        slug: "sirketiniz-ne-kadar-saglikli"
+        slug: "sirketiniz-ne-kadar-saglikli",
+        date: "2025-12-28"
     },
     {
         id: 8,
@@ -65,7 +72,8 @@ const blogPosts = [
         author: "Admin",
         category: "Dijital Pazarlama",
         image: "https://images.unsplash.com/photo-1432888622947-70352548327c?q=80&w=2074&auto=format&fit=crop",
-        slug: "dijital-pazarlamanin-gelecegi"
+        slug: "dijital-pazarlamanin-gelecegi",
+        date: "2025-12-20"
     },
     {
         id: 9,
@@ -73,7 +81,8 @@ const blogPosts = [
         author: "Admin",
         category: "Web & Sosyal Medya",
         image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=2106&auto=format&fit=crop",
-        slug: "basarili-dijital-pazarlama-kampanyalarinin-sirlari"
+        slug: "basarili-dijital-pazarlama-kampanyalarinin-sirlari",
+        date: "2025-12-15"
     },
     {
         id: 10,
@@ -81,11 +90,27 @@ const blogPosts = [
         author: "Admin",
         category: "SEO",
         image: "https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?q=80&w=2080&auto=format&fit=crop",
-        slug: "trafik-ve-donusumleri-artiran-seo-stratejileri"
+        slug: "trafik-ve-donusumleri-artiran-seo-stratejileri",
+        date: "2025-12-10"
     }
 ];
 
 const Blog = () => {
+    // Mock language state - in a real app this would come from context/props
+    const language = 'tr'; // 'tr' or 'en'
+
+    const formatDate = (dateString) => {
+        const date = new Date(dateString);
+
+        if (language === 'tr') {
+            // TR format: 22 Ocak 2026
+            return date.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+        } else {
+            // EN format: January 22, 2026
+            return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+        }
+    };
+
     return (
         <div className="blog-page">
             <div className="blog-hero">
@@ -127,7 +152,7 @@ const Blog = () => {
                                         <div className="blog-meta">
                                             <span className="blog-category">{post.category}</span>
                                             <span className="meta-separator">|</span>
-                                            <span className="blog-date">Oct 24, 2024</span>
+                                            <span className="blog-date">{formatDate(post.date)}</span>
                                         </div>
                                     </div>
                                     <div className="blog-image-wrapper">

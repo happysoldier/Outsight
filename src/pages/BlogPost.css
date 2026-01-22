@@ -186,24 +186,25 @@
         left: 1rem;
     }
 }
+
 /* Author Section */
 .post-authors-section {
-    margin-top: 5rem;
-    padding-top: 2rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
 }
 
 .authors-separator {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .authors-title {
     font-family: var(--font-sans);
-    font-size: 2rem;
+    font-size: 36px;
     font-weight: 300;
     color: var(--color-text-primary);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .authors-grid {
@@ -224,7 +225,7 @@
     height: 120px;
     margin-bottom: 1rem;
     overflow: hidden;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 .author-image-wrapper img {

@@ -44,17 +44,16 @@ const BlogPost = () => {
                     <div className="container hero-content">
                         <Link to="/blog" className="back-link">← Kütüphaneye Dön</Link>
                         <div className="title-wrapper">
-                            <span className="post-category">{post.category}</span>
                             <h1 className="post-title">{post.title}</h1>
-                            <div className="post-meta">
-                                <span>{formatDate(post.date)}</span>
-                            </div>
                         </div>
                     </div>
                 </header>
 
                 <div className="container post-content-container">
                     <div className="post-content-body">
+                        <div className="post-date-content">
+                            {formatDate(post.date)}
+                        </div>
                         {post.content ? post.content : (
                             <p>İçerik hazırlanıyor...</p>
                         )}

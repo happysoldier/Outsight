@@ -85,8 +85,15 @@
 
 
 .title-wrapper {
-    max-width: 900px;
+    max-width: 1080px;
     margin: 0 auto;
+}
+
+.post-date-content {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .post-category {

@@ -35,7 +35,7 @@ const PersonBio = () => {
                             </div>
                         </div>
                         <div className="hero-right">
-                            <img src={personData.image} alt={personData.name} />
+                            <img src={personData.bioImage || personData.image} alt={personData.name} />
                         </div>
                     </div>
                 </div>

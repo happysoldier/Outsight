@@ -69,6 +69,7 @@
     aspect-ratio: 486 / 374;
     display: block;
     object-fit: cover;
+    object-position: top;
 }
 
 /* Bio Content Section */

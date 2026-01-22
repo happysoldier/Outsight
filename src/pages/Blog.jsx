@@ -88,28 +88,50 @@ const blogPosts = [
 const Blog = () => {
     return (
         <div className="blog-page">
-            <div className="page-header">
+            <div className="blog-hero">
                 <div className="container">
-                    <span className="chapter-scent">Kütüphane</span>
-                    <h1>Düşünceler, stratejiler ve<br />piyasa analizleri.</h1>
+                    <h1>Öngörülerimiz</h1>
+                    <p className="hero-description">
+                        Düşüncelerimize ve ürettiğimiz fikirlere doğrudan sizin ihtiyaçlarınız yön veriyor. Paylaştığımız makaleler, iş dünyasında sizin için gerçekten fark yaratan konulara taze ve uygulanabilir bir bakış açısı sunuyor.
+                    </p>
                 </div>
             </div>
 
-            <section className="section">
+            <div className="insights-filter-bar">
                 <div className="container">
-                    <div className="blog-grid">
+                    <div className="filter-wrapper">
+                        <button className="filter-dropdown">
+                            Industries and services
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <button className="filter-dropdown">
+                            Topics
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <section className="section insights-section">
+                <div className="container">
+                    <div className="blog-list">
                         {blogPosts.map(post => (
                             <article key={post.id} className="blog-card">
                                 <Link to={`/blog/${post.slug}`} className="blog-card-link">
-                                    <div className="blog-image-wrapper">
-                                        <img src={post.image} alt={post.title} />
-                                    </div>
                                     <div className="blog-content">
-                                        <span className="blog-category">{post.category}</span>
                                         <h3 className="blog-title">{post.title}</h3>
                                         <div className="blog-meta">
-                                            <span className="blog-author">{post.author}</span>
+                                            <span className="blog-category">{post.category}</span>
+                                            <span className="meta-separator">|</span>
+                                            <span className="blog-date">Oct 24, 2024</span>
                                         </div>
+                                    </div>
+                                    <div className="blog-image-wrapper">
+                                        <img src={post.image} alt={post.title} />
                                     </div>
                                 </Link>
                             </article>

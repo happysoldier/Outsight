@@ -64,10 +64,21 @@ const BlogPost = () => {
                                 <div className="authors-grid">
                                     {post.authors.map((author, index) => (
                                         <div key={index} className="author-card">
-                                            <div className="author-image-wrapper">
-                                                <img src={author.image} alt={author.name} />
-                                            </div>
-                                            <h4 className="author-name">{author.name}</h4>
+                                            {author.bioSlug ? (
+                                                <Link to={`/about/people/${author.bioSlug}`} className="author-card-link">
+                                                    <div className="author-image-wrapper">
+                                                        <img src={author.image} alt={author.name} />
+                                                    </div>
+                                                    <h4 className="author-name">{author.name}</h4>
+                                                </Link>
+                                            ) : (
+                                                <>
+                                                    <div className="author-image-wrapper">
+                                                        <img src={author.image} alt={author.name} />
+                                                    </div>
+                                                    <h4 className="author-name">{author.name}</h4>
+                                                </>
+                                            )}
                                             <p className="author-title">{author.title}</p>
                                         </div>
                                     ))}

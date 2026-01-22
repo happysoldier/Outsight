@@ -199,9 +199,9 @@
     margin-bottom: 1rem;
 }
 
-.authors-title {
+.post-authors-section .authors-title {
     font-family: var(--font-sans);
-    font-size: 36px !important;
+    font-size: 36px;
     font-weight: 300;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
@@ -248,4 +248,15 @@
     font-weight: 400;
     color: var(--color-text-secondary);
     margin: 0;
+}
+.author-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.author-card-link:hover .author-name {
+    color: var(--color-accent);
 }

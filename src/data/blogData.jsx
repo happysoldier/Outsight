@@ -58,12 +58,14 @@ export const blogPosts = [
             {
                 name: "Hakan Mısırlı",
                 title: "Kurucu Ortak",
-                image: hakanMisirli
+                image: hakanMisirli,
+                bioSlug: "hakan-misirli"
             },
             {
                 name: "Şener Çavga",
                 title: "Teknoloji Danışmanı",
-                image: senerCavga
+                image: senerCavga,
+                bioSlug: "sener-cavga"
             }
         ]
     },

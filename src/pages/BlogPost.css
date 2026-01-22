@@ -18,8 +18,10 @@
     align-items: center;
     justify-content: center;
     color: var(--color-white);
-    margin-bottom: 2.50rem;
+    margin-bottom: 4rem;
     padding: 0;
+    /* Compensation for fixed navbar */
+    padding-top: 100px;
 }
 
 .hero-overlay {
@@ -49,7 +51,7 @@
 /* Back link positioned absolutely relative to the hero section, not the flex flow */
 .post-header-hero .back-link {
     position: absolute;
-    top: 2rem;
+    top: 7rem;
     left: 2rem;
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
@@ -191,7 +193,8 @@
     }
 
     .post-header-hero .back-link {
-        top: 1rem;
+        top: 6rem;
+        /* Adjusted for mobile navbar height if needed */
         left: 1rem;
     }
 }

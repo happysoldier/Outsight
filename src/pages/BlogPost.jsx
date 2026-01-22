@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getPostBySlug } from '../data/blogData';
+import { getPostBySlug } from '../data/blogData.jsx';
 import './BlogPost.css';
 
 const BlogPost = () => {

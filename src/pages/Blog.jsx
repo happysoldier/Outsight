@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
 
-import { blogPosts } from '../data/blogData';
+import { blogPosts } from '../data/blogData.jsx';
 
 const Blog = () => {
     // Mock language state - in a real app this would come from context/props

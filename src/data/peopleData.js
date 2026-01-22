@@ -1,6 +1,7 @@
 // People data for the organization - SSH Trigger Update
 import senerCavgaImage from '../assets/sener-cavga.jpg';
 import hakanMisirliImage from '../assets/hakan-misirli.png';
+import muratTolgaEserImage from '../assets/murat-tolga-eser.png';
 
 export const peopleData = {
     'hakan-misirli': {
@@ -74,6 +75,33 @@ export const peopleData = {
                 link: "/blog/turkiye-ecommerce-trendleri"
             }
         ]
+    },
+    'murat-tolga-eser': {
+        id: 'murat-tolga-eser',
+        name: "Murat Tolga Eser",
+        title: "Co-Founder, Pazarlama Direktörü, İş Stratejisti",
+        location: "Istanbul, Turkey",
+        email: "murat.eser@outsight.com.tr",
+        phone: "+90 212 555 0100",
+        linkedin: "https://www.linkedin.com/in/murat-eser-a9268225/",
+        image: muratTolgaEserImage,
+        bio: [
+            "Murat Tolga Eser; iş geliştirme, pazarlama ve ticari büyüme alanlarında uzun yıllara dayanan yöneticilik tecrübesine sahiptir.",
+            "Volkswagen, Ülker ve Ülker bünyesindeki farklı markalar (Cafe Crown, Godiva, Lovels, Golf Dondurma… ) ile Bereket Döner, Taş Kasap, FMSG ve gıda perakendesindeki güçlü yapılarda; pazarlama müdürlüğü ve Danışmanlık görevlerinde bulunmuş, markaların strateji, büyüme, konumlanma ve iş geliştirme süreçlerini yönetmiştir.",
+            "Strateji ile sahadaki ticari gerçekliği bir araya getiren yaklaşımıyla, OUTSIGHT’ın iş tarafındaki dönüşüm gücünü temsil eder."
+        ],
+        expertise: [
+            "İş Geliştirme",
+            "Pazarlama Stratejileri",
+            "Ticari Büyüme",
+            "Marka Konumlandırma"
+        ],
+        industries: [
+            "FMCG",
+            "Gıda",
+            "Gıda Perakendesi"
+        ],
+        insights: []
     }
 };
 

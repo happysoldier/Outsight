@@ -42,7 +42,6 @@ const BlogPost = () => {
                 <header className="post-header-hero" style={{ backgroundImage: `url(${post.image})` }}>
                     <div className="hero-overlay"></div>
                     <div className="container hero-content">
-                        <Link to="/blog" className="back-link">← Kütüphaneye Dön</Link>
                         <div className="title-wrapper">
                             <h1 className="post-title">{post.title}</h1>
                         </div>

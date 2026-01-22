@@ -48,22 +48,7 @@
     padding: 0;
 }
 
-/* Back link positioned absolutely relative to the hero section, not the flex flow */
-.post-header-hero .back-link {
-    position: absolute;
-    top: 7rem;
-    left: 2rem;
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    z-index: 10;
-    transition: color 0.3s ease;
-}
-
-.post-header-hero .back-link:hover {
-    color: var(--color-white);
-}
+/* Make container full height relative to flex parent's constraints */
 
 .title-wrapper {
     max-width: 1080px;

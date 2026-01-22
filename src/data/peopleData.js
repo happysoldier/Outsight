@@ -1,4 +1,4 @@
-// People data for the organization
+// People data for the organization - SSH Trigger Update
 import senerCavgaImage from '../assets/sener-cavga.jpg';
 import hakanMisirliImage from '../assets/hakan-misirli.png';
 

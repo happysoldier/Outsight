@@ -102,9 +102,18 @@
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
     padding-top: 1rem;
-    margin: -2rem auto 0 auto;
+    margin: -2rem 0 0 0;
     max-width: 900px;
     /* Pull up towards the hero if needed */
+}
+
+/* ... (skip unchanged lines if possible, but replace tool needs contiguous block for context or separate calls. I will target separate blocks if too far apart. They are separate.) */
+
+/* Intro Section */
+.people-intro-section {
+    max-width: 900px !important;
+    margin: 4rem 0 6rem 0 !important;
+    text-align: left;
 }
 
 .person-card-kearney {
@@ -205,11 +214,12 @@
         height: 250px;
     }
 }
+
 /* Intro Section */
 .people-intro-section {
     max-width: 900px !important;
-    margin: 4rem auto 6rem auto !important;
-    text-align: center;
+    margin: 4rem 0 6rem 0 !important;
+    text-align: left;
 }
 
 .intro-title {

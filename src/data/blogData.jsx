@@ -3,7 +3,148 @@ import digitalMarketingContent from '../assets/digital-marketing-content.png';
 import hakanMisirli from '../assets/hakan-misirli.png';
 import senerCavga from '../assets/sener-cavga.jpg';
 
+import digitalMarketingTrendsHero from '../assets/digital-marketing-trends-hero.png';
+import digitalMarketingTrendsContent from '../assets/digital-marketing-trends-content.png';
+
+import innovativeStrategiesHero from '../assets/innovative-strategies-hero.png';
+import innovativeStrategiesContent from '../assets/innovative-strategies-content.png';
+
 export const blogPosts = [
+    {
+        id: 13,
+        title: "Dijital Pazarlamada Yenilikçi Stratejiler",
+        author: "Şener Çavga",
+        category: "Dijital Pazarlama",
+        image: innovativeStrategiesHero,
+        slug: "dijital-pazarlamada-yenilikci-stratejiler",
+        date: "2026-01-08",
+        content: (
+            <>
+                <p className="lead">
+                    Pazarlama dünyasında yenilik, sadece yeni bir sosyal medya platformuna girmek veya yapay zekayı bir metin yazarı olarak kullanmak değildir. Gerçek yenilik, Outsight perspektifiyle, veriyi ve insan psikolojisini birleştirerek rakiplerin henüz hayal bile edemediği bir büyüme ekosistemi kurmaktır.
+                </p>
+                <div className="post-image-content">
+                    <img src={innovativeStrategiesContent} alt="Yenilikçi Pazarlama Stratejileri" />
+                </div>
+                <p>
+                    İşte markanızı 2026 ve ötesine taşıyacak stratejik dönüşüm noktaları:
+                </p>
+                <h3>1. Tahminlemeye Dayalı “Öngörü Mimarlığı”</h3>
+                <p>
+                    Yenilikçi pazarlamanın ilk kuralı, tepki vermek yerine öngörmektir. Mevcut verilerinizi kullanarak müşterilerinizin henüz dile getirmediği ihtiyaçlarını belirlemek, Outsight’ın büyüme mühendisliğinin kalbidir. Müşteri daha “aramaya” başlamadan onun karşısına çıkacak stratejiyi kurmak, gerçek rekabet avantajıdır.
+                </p>
+                <h3>2. Algoritmalardan Topluluklara Dönüş (Community First)</h3>
+                <p>
+                    Reklam bütçeleri arttıkça verimlilik düşüyor. Yenilikçi markalar artık algoritmaların insafına kalmak yerine, kendi topluluklarını inşa ediyor. Sosyal medya platformlarını birer “ilan tahtası” değil, birer “etkileşim ve değer merkezi” olarak konumlandırmak, sürdürülebilir büyümenin yeni anahtarıdır.
+                </p>
+                <h3>3. Hiper-Kişiselleştirme ve Duygusal Veri</h3>
+                <p>
+                    Veri artık sadece rakamlardan (tıklama, izlenme) ibaret değil. Yenilikçi stratejiler, kullanıcının o andaki ruh halini ve motivasyonunu analiz eden “duygusal veri” setlerini kullanıyor. Outsight ile tasarlanan kampanyalar, sadece doğru kişiye değil, o kişinin doğru anına ve doğru duygusuna hitap eder.
+                </p>
+                <h3>4. Şeffaflık ve Etik Odaklı Marka Kimliği</h3>
+                <p>
+                    Yapay zekanın her yeri sardığı bir dünyada, “insani dokunuş” ve “şeffaflık” en büyük yeniliktir. Müşteriler artık verilerinin nasıl kullanıldığını bilmek ve etik değerleri olan markalarla bağ kurmak istiyor. Sürdürülebilirliği ve dürüstlüğü pazarlama stratejisinin merkezine koymak, en kârlı inovasyondur.
+                </p>
+                <blockquote>
+                    “Geleceği tahmin etmenin en iyi yolu, onu bugünden tasarlamaktır.”
+                </blockquote>
+            </>
+        ),
+        authors: [
+            {
+                name: "Şener Çavga",
+                title: "Dijital Dönüşüm Direktörü",
+                image: senerCavga,
+                bioSlug: "sener-cavga"
+            }
+        ]
+    },
+    {
+        id: 12,
+        title: "Dijital Pazarlama Trendlerine Dair Nihai Kılavuz: 2026 ve Ötesini Tasarlamak",
+        author: "Şener Çavga",
+        category: "Dijital Pazarlama",
+        image: digitalMarketingTrendsHero,
+        slug: "dijital-pazarlama-trendlerine-dair-nihai-kilavuz",
+        date: "2026-01-03",
+        content: (
+            <>
+                <p className="lead">
+                    2026 ve Ötesini Tasarlamak
+                </p>
+                <p>
+                    Dijital evren her zamankinden daha hızlı genişliyor. Dün “yenilik” dediğimiz yapay zeka araçları, bugün operasyonel birer standart haline geldi. Outsight olarak biz, trendleri sadece takip etmiyoruz; onları markanızın büyüme mimarisine entegre edilecek birer yapı taşı olarak görüyoruz.
+                </p>
+                <div className="post-image-content">
+                    <img src={digitalMarketingTrendsContent} alt="Dijital Pazarlama Trendleri" />
+                </div>
+                <p>
+                    Bu kılavuz, gürültüyü temizleyip markanız için gerçekten fark yaratacak stratejik trendlere odaklanmaktadır.
+                </p>
+                <h3>1. Yapay Zekadan “Yapay Stratejiye” Geçiş</h3>
+                <p>
+                    2026’da sadece içerik üreten yapay zekalar değil, strateji optimize eden modeller devrede.
+                </p>
+                <p>
+                    <strong>Trend:</strong> Tahminlemeye dayalı (Predictive) bütçe yönetimi.
+                </p>
+                <p>
+                    <strong>Outsight Yaklaşımı:</strong> AI’yı sadece operasyonda değil, pazarın bir sonraki hamlesini öngörmek için kullanın.
+                </p>
+                <h3>2. Arama Deneyimi Optimizasyonu (SGE ve Cevap Motorları)</h3>
+                <p>
+                    Artık kullanıcılar sadece Google’da “link” aramıyor; doğrudan “cevap” bekliyor.
+                </p>
+                <p>
+                    <strong>Trend:</strong> SGE (Search Generative Experience) ile arama motorlarının birer danışmana dönüşmesi.
+                </p>
+                <p>
+                    <strong>Strateji:</strong> İçeriklerinizi sadece anahtar kelimelerle değil, karmaşık sorulara net yanıtlar verecek şekilde yapılandırın.
+                </p>
+                <h3>3. Etik Veri ve “Sıfırıncı Taraf” Veri Devrimi</h3>
+                <p>
+                    Çerezsiz (cookieless) bir dünyada, en büyük hazine müşterinin size kendi rızasıyla verdiği bilgidir.
+                </p>
+                <p>
+                    <strong>Trend:</strong> Şeffaflık ve kişisel veri güvenliğinin bir pazarlama argümanı haline gelmesi.
+                </p>
+                <p>
+                    <strong>Uygulama:</strong> Oyunlaştırma (gamification) ve interaktif testler ile veri toplama süreçlerini bir deneyime dönüştürün.
+                </p>
+                <h3>4. Hiper-Kişiselleştirilmiş Video Deneyimleri</h3>
+                <p>
+                    Standart videoların yerini, izleyicinin profiline göre gerçek zamanlı değişen (dynamic creative) videolar alıyor.
+                </p>
+                <p>
+                    <strong>Etki:</strong> Statik reklamlara oranla %300 daha fazla dönüşüm.
+                </p>
+                <h3>5. Sosyal Ticaret ve “Doğrudan” Bağlantı</h3>
+                <p>
+                    Sosyal medya artık sadece bir vitrin değil; ödeme sistemlerinin entegre olduğu birer mağaza. Kullanıcı platformdan çıkmadan satın alma işlemini tamamlamalı.
+                </p>
+                <h3>Trendleri Stratejiye Dönüştürmek İçin 3 Adımlı Uygulama Planı</h3>
+                <p>
+                    Bir trendin “havalı” olması, markanız için “doğru” olduğu anlamına gelmez. Outsight perspektifiyle şu adımları izleyin:
+                </p>
+                <ul>
+                    <li><strong>Uygunluk Analizi:</strong> Bu trend marka kimliğinizle ve hedef kitlenizin davranışıyla örtüşüyor mu?</li>
+                    <li><strong>Pilot Uygulama:</strong> Tüm bütçeyi yeni bir trende yatırmak yerine, küçük ölçekli testlerle ROI (Yatırım Getirisi) ölçümü yapın.</li>
+                    <li><strong>Mimari Entegrasyon:</strong> Başarılı olan trendi, tüm dijital pazarlama ekosisteminize kalıcı bir süreç olarak ekleyin.</li>
+                </ul>
+                <blockquote>
+                    “Trendler geçer, strateji kalır. Outsight ile geçici olanı değil, kalıcı büyümeyi hedefleyin.”
+                </blockquote>
+            </>
+        ),
+        authors: [
+            {
+                name: "Şener Çavga",
+                title: "Dijital Dönüşüm Direktörü",
+                image: senerCavga,
+                bioSlug: "sener-cavga"
+            }
+        ]
+    },
     {
         id: 11,
         title: "Dijital Pazarlamada Uzmanlaşmak: Başarı Stratejileri",
@@ -11,7 +152,7 @@ export const blogPosts = [
         category: "Pazarlama & Marka Yönetimi",
         image: digitalMarketingHero,
         slug: "dijital-pazarlamada-uzmanlasmak-basari-stratejileri",
-        date: "2026-01-22",
+        date: "2026-01-01",
         content: (
             <>
                 <p className="lead">
@@ -56,108 +197,12 @@ export const blogPosts = [
         ),
         authors: [
             {
-                name: "Hakan Mısırlı",
-                title: "Kurucu Ortak",
-                image: hakanMisirli,
-                bioSlug: "hakan-misirli"
-            },
-            {
                 name: "Şener Çavga",
-                title: "Teknoloji Danışmanı",
+                title: "Dijital Dönüşüm Direktörü",
                 image: senerCavga,
                 bioSlug: "sener-cavga"
             }
         ]
-    },
-    {
-        id: 1,
-        title: "Hepimiz Birimiz, Birimiz Hepimiz İçin",
-        author: "Emre Yazıcı",
-        category: "Dijital Dönüşüm",
-        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
-        slug: "hepimiz-birimiz-birimiz-hepimiz-icin",
-        date: "2026-01-22"
-    },
-    {
-        id: 2,
-        title: "Bakkaldan Algoritmaya",
-        author: "Levent Kasman",
-        category: "İş Dünyası",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-        slug: "bakkaldan-algoritmaya",
-        date: "2026-01-20"
-    },
-    {
-        id: 3,
-        title: "2026: İş Dünyası İçin Yüksek Adaptasyon ve Çok Boyutlu Riskler Yılı",
-        author: "Hamit Saçan",
-        category: "Strateji",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-        slug: "2026-is-dunyasi-icin-yuksek-adaptasyon",
-        date: "2026-01-18"
-    },
-    {
-        id: 4,
-        title: "Türkiye’de Gıda İşletmelerinde Genel Yaklaşım",
-        author: "Murat Tolga Eser",
-        category: "Satın Alma Yönetimi",
-        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop",
-        slug: "turkiye-de-gida-isletmelerinde-genel-yaklasim",
-        date: "2026-01-15"
-    },
-    {
-        id: 5,
-        title: "Merkezi Satın Almaya Geçiş Yapalım Ama Nasıl?",
-        author: "Hamit Saçan",
-        category: "Tedarik Zinciri",
-        image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1974&auto=format&fit=crop",
-        slug: "merkezi-satin-almaya-gecis-yapalim-ama-nasil",
-        date: "2026-01-10"
-    },
-    {
-        id: 6,
-        title: "Tedarik Zinciri: Formalite mi, Stratejik bir Zorunluluk mu?",
-        author: "Emre Yazıcı",
-        category: "Check Up",
-        image: "https://images.unsplash.com/photo-1494412651409-ae5e0dce1c0d?q=80&w=2070&auto=format&fit=crop",
-        slug: "tedarik-zinciri-formalite-mi",
-        date: "2026-01-05"
-    },
-    {
-        id: 7,
-        title: "Şirketiniz Ne Kadar Sağlıklı?",
-        author: "Admin",
-        category: "Pazarlama",
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop",
-        slug: "sirketiniz-ne-kadar-saglikli",
-        date: "2025-12-28"
-    },
-    {
-        id: 8,
-        title: "Dijital Pazarlamanın Geleceği: Sırada Ne Var?",
-        author: "Admin",
-        category: "Dijital Pazarlama",
-        image: "https://images.unsplash.com/photo-1432888622947-70352548327c?q=80&w=2074&auto=format&fit=crop",
-        slug: "dijital-pazarlamanin-gelecegi",
-        date: "2025-12-20"
-    },
-    {
-        id: 9,
-        title: "Başarılı Dijital Pazarlama Kampanyalarının Sırları",
-        author: "Admin",
-        category: "Web & Sosyal Medya",
-        image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?q=80&w=2106&auto=format&fit=crop",
-        slug: "basarili-dijital-pazarlama-kampanyalarinin-sirlari",
-        date: "2025-12-15"
-    },
-    {
-        id: 10,
-        title: "Trafik ve Dönüşümleri Artıran SEO Stratejileri",
-        author: "Admin",
-        category: "SEO",
-        image: "https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?q=80&w=2080&auto=format&fit=crop",
-        slug: "trafik-ve-donusumleri-artiran-seo-stratejileri",
-        date: "2025-12-10"
     }
 ];
 

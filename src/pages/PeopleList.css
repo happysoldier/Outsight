@@ -100,7 +100,7 @@
 .people-grid-kearney {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 3rem;
     padding-top: 1rem;
     margin: -2rem 0 0 0;
     max-width: 900px;
@@ -217,26 +217,26 @@
 
 /* Intro Section */
 .people-intro-section {
-    max-width: 900px !important;
-    margin: 4rem 0 6rem 0 !important;
+    max-width: 1180px !important;
+    margin: -2rem 0 6rem 0 !important;
     text-align: left;
 }
 
 .intro-title {
     font-family: var(--font-serif);
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 2.25rem;
+    font-weight: 400;
     color: var(--color-text-primary);
-    margin-bottom: 2rem;
-    line-height: 1.2;
+    margin-bottom: 1rem;
+    line-height: 1.18;
 }
 
 .intro-text {
     font-family: var(--font-sans);
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     color: var(--color-text-secondary);
-    line-height: 1.8;
-    font-weight: 300;
+    line-height: 1.25;
+    font-weight: 100;
 }
 
 .intro-text p {

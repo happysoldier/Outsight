@@ -45,7 +45,13 @@
 
 .filter-wrapper {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.filter-group {
+    position: relative;
+    display: inline-block;
 }
 
 .filter-dropdown {
@@ -58,13 +64,85 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0;
+    padding: 0.5rem 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.filter-dropdown.active {
+    color: #A6192E;
 }
 
 .filter-dropdown:hover {
     color: var(--color-accent);
+}
+
+.filter-dropdown svg {
+    transition: transform 0.2s;
+}
+
+.filter-dropdown.open svg {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 220px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    z-index: 1000;
+    margin-top: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    transition: all 0.2s;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f9f9f9;
+    color: var(--color-text-primary);
+}
+
+.dropdown-item.selected {
+    color: #A6192E;
+    font-weight: 600;
+    background-color: #fafafa;
+}
+
+/* Reset Filter Button (Optional style if we add one) */
+.reset-filters {
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* List Layout */
@@ -173,4 +251,34 @@
     .blog-content {
         padding-right: 0;
     }
+
+    .filter-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+/* Load More Button */
+.load-more-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 1rem;
+}
+
+.load-more-button {
+    background-color: transparent;
+    border: 1px solid var(--color-text-primary);
+    color: var(--color-text-primary);
+    padding: 0.8rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.load-more-button:hover {
+    background-color: var(--color-text-primary);
+    color: var(--color-white);
 }

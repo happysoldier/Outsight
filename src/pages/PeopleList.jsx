@@ -47,6 +47,18 @@ const PeopleList = () => {
                 </div>
             </header>
 
+            <div className="container people-intro-section">
+                <h2 className="intro-title">Geleceği Veriyle, Başarıyı Uzmanlıkla Tasarlıyoruz</h2>
+                <div className="intro-text">
+                    <p>
+                        Outsight olarak biz, her işletmeyi kendine özgü potansiyeli olan yaşayan bir organizma olarak görüyoruz. “Ekibimiz” sayfamızda gördüğünüz her bir profesyonel; finansal mühendislikten marka mimarisine, operasyonel verimlilikten dijital dönüşüme kadar farklı disiplinlerde derin uzmanlığa sahip stratejik çözüm ortaklarınızdır. Karmaşık iş sorunlarınıza rasyonel ve kalıcı çözümler üretmek için, ‘dışarıdan bir bakışın’ objektifliğini, işinizi kendi işi gibi gören bir sahiplenme duygusuyla birleştiriyoruz. Markanızın geleceğini, bu multidisipliner akıl gücüyle birlikte inşa ediyoruz.
+                    </p>
+                    <p>
+                        En büyük sermayemiz, binalarımız değil; bu yapının içindeki kolektif akıl gücüdür. Burada, her biri kendi alanında uzmanlaşmış danışmanlarımızla, veriyi stratejiye, stratejiyi ise somut başarı hikayelerine dönüştürüyoruz.
+                    </p>
+                </div>
+            </div>
+
             <div className="container">
                 <div className="people-grid-kearney">
                     {people.map(person => (

@@ -8,12 +8,10 @@ const ClientConfidentiality = () => {
 
     return (
         <div className="legal-page">
-            <div className="container">
-                <div style={{ paddingTop: '6rem', paddingBottom: '2rem' }}>
-                    {/* Removing the small tag if not in screenshot, or keeping it subtle. Screenshot didn't show it clearly but usually breadcrumbs exist. Keeping it simple. */}
-                    {/* <span className="chapter-scent">Politikalarımız</span> */}
-                    <h1 style={{ fontSize: '3.5rem', marginBottom: '2rem', letterSpacing: '-0.02em' }}>Müşteri Gizliliği</h1>
-                    <div className="divider" style={{ margin: '0' }}></div>
+            <div className="legal-header">
+                <div className="container">
+                    <h1>Müşteri Gizliliği</h1>
+                    <div className="divider"></div>
                 </div>
             </div>
 

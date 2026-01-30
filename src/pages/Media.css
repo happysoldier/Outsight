@@ -1,0 +1,128 @@
+/* Media Page Styles */
+.media-page {
+    background-color: var(--color-white);
+}
+
+.media-hero {
+    height: 60vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Added for horizontal centering if needed, though text-align usually handles it in container */
+    padding-bottom: 0;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.media-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Overlay for readability */
+}
+
+.media-hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: left;
+}
+
+.media-hero .chapter-scent {
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.media-hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.1;
+    color: #fff;
+}
+
+
+
+/* News Grid */
+.media-content-section {
+    padding: 5rem 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.news-card h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+    transition: color 0.3s;
+}
+
+.news-card:hover h3 {
+    color: var(--color-accent);
+}
+
+.news-source {
+    margin-top: auto;
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.news-source::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+    .media-hero h1 {
+        font-size: 3rem;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}

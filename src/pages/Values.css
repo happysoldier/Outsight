@@ -1,0 +1,74 @@
+/* Values Page Styles */
+
+.values-page {
+    background-color: var(--color-white);
+}
+
+.values-hero-section {
+    padding: 8rem 0 4rem;
+    background-color: var(--color-bg-secondary);
+}
+
+.values-hero-header .chapter-scent {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--color-text-secondary);
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.values-hero-header h1 {
+    font-size: 3.5rem;
+    max-width: 900px;
+    margin-bottom: 2rem;
+    color: var(--color-text-primary);
+}
+
+.values-hero-header p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 800px;
+}
+
+/* Editorial Values Grid (Moved from About.css) */
+.values-grid-editorial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.value-item-editorial {
+    border-top: 1px solid var(--color-text-primary);
+    padding-top: 2rem;
+}
+
+.value-num {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    display: block;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.value-item-editorial h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+}
+
+.value-item-editorial p {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .values-hero-header h1 {
+        font-size: 2.5rem;
+    }
+}

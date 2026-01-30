@@ -1,15 +1,21 @@
 import React from 'react';
 import './About.css';
 import aboutImage from '../assets/about-meeting.png';
+import aboutHeroBg from '../assets/about-hero-new.png';
+
+import hakanMisirli from '../assets/hakan-misirli.png';
+import muratTolgaEser from '../assets/murat-tolga-eser.png';
+import kubilayOzvardar from '../assets/kubilay-ozvardar.png';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
         <div className="about-page">
-            <div className="page-header">
+            <div className="page-header" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${aboutHeroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', color: '#fff' }}>
                 <div className="container">
-                    <span className="chapter-scent">Hakkımızda</span>
-                    <h1>Geleceği, bugünden tasarlayan bir iş mimarisi ve strateji merkezi.</h1>
-                    <div className="divider"></div>
+                    <span className="chapter-scent" style={{ color: '#fff' }}>Hikayemiz</span>
+                    <h1 style={{ color: '#fff' }}>Geleceği, bugünden tasarlayan bir iş mimarisi ve strateji merkezi.</h1>
+                    <div className="divider" style={{ backgroundColor: '#fff' }}></div>
                 </div>
             </div>
 
@@ -73,50 +79,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section className="section">
-                <div className="container">
-                    <div className="section-header">
-                        <h2>Değerlerimiz</h2>
-                        <div className="divider"></div>
-                        <p style={{ maxWidth: '800px', fontSize: '1.25rem', color: 'var(--color-text-secondary)' }}>
-                            Sürdürülebilirlik, çeşitlilik ve toplumsal katılıma olan bağlılığımız, hem yerel hem de küresel ölçekte
-                            olumlu bir etki yaratma taahhüdümüzü yansıtmaktadır.
-                        </p>
-                    </div>
-                    <div className="values-grid-editorial">
-                        <div className="value-item-editorial">
-                            <span className="value-num">01.</span>
-                            <h3>Mükemmellik</h3>
-                            <p>Tüm hizmetlerimizde en yüksek kaliteyi ve sürekli iyileştirmeyi hedefliyoruz.</p>
-                        </div>
-                        <div className="value-item-editorial">
-                            <span className="value-num">02.</span>
-                            <h3>İnovasyon</h3>
-                            <p>Yeni teknolojileri benimseyerek müşterilerimizin her zaman bir adım önde olmasını sağlıyoruz.</p>
-                        </div>
-                        <div className="value-item-editorial">
-                            <span className="value-num">03.</span>
-                            <h3>Bütünlük</h3>
-                            <p>İşlerimizi dürüstlük ve şeffaflıkla yürütüyor, güvene dayalı ilişkiler kuruyoruz.</p>
-                        </div>
-                        <div className="value-item-editorial">
-                            <span className="value-num">04.</span>
-                            <h3>İşbirliği</h3>
-                            <p>Ekip içi ve müşteriyle olan güçlü iş birliğinin en iyi sonuçları getirdiğine inanıyoruz.</p>
-                        </div>
-                        <div className="value-item-editorial">
-                            <span className="value-num">05.</span>
-                            <h3>Hesap Verebilirlik</h3>
-                            <p>Sonuçlarımızdan sorumluluk alıyor, taahhütlerimizi yerine getiriyoruz.</p>
-                        </div>
-                        <div className="value-item-editorial">
-                            <span className="value-num">06.</span>
-                            <h3>Sürdürülebilirlik</h3>
-                            <p>Sosyal sorumluluğu destekleyen stratejiler geliştirmeye kendimizi adadık.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             <section className="section section-grey">
                 <div className="container">
@@ -124,18 +87,33 @@ const About = () => {
                         <h2>Liderlik Ekibi</h2>
                         <div className="divider"></div>
                     </div>
-                    <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap' }}>
+                    <div style={{ display: 'flex', gap: '3rem', flexWrap: 'wrap', justifyContent: 'center' }}>
                         <div className="team-member">
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Hakan Mısırlı</h3>
-                            <p style={{ color: 'var(--color-text-secondary)' }}>CEO / Kurucu Ortak</p>
+                            <Link to="/about/people/hakan-misirli" className="team-member-link">
+                                <div className="team-image-wrapper">
+                                    <img src={hakanMisirli} alt="Hakan Mısırlı" />
+                                </div>
+                                <h3>Hakan Mısırlı</h3>
+                                <p>CEO / Kurucu Ortak</p>
+                            </Link>
                         </div>
                         <div className="team-member">
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Murat Tolga Eser</h3>
-                            <p style={{ color: 'var(--color-text-secondary)' }}>Kıdemli Ortak</p>
+                            <Link to="/about/people/murat-tolga-eser" className="team-member-link">
+                                <div className="team-image-wrapper">
+                                    <img src={muratTolgaEser} alt="Murat Tolga Eser" />
+                                </div>
+                                <h3>Murat Tolga Eser</h3>
+                                <p>Kıdemli Ortak</p>
+                            </Link>
                         </div>
                         <div className="team-member">
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>Kubilay Özvardar</h3>
-                            <p style={{ color: 'var(--color-text-secondary)' }}>Kıdemli Ortak</p>
+                            <Link to="/about/people/kubilay-ozvardar" className="team-member-link">
+                                <div className="team-image-wrapper">
+                                    <img src={kubilayOzvardar} alt="Kubilay Özvardar" />
+                                </div>
+                                <h3>Kubilay Özvardar</h3>
+                                <p>Kıdemli Ortak</p>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+// Import Hero Image (using a fitting strategic/modern image)
+import heroImg from '../assets/modern-marketing-hero.png';
+
+// Import Insight Images
+import insight1Img from '../assets/company-health-hero.png'; // Teams/Architecture
+import insight2Img from '../assets/future-of-digital-marketing-hero.png'; // Digital Evolution
+import insight3Img from '../assets/innovative-strategies-hero.png'; // Growth/Strategy
+
 const Home = () => {
     return (
         <div className="home-page">
@@ -22,7 +30,7 @@ const Home = () => {
                     </div>
                     <div className="hero-image-wrapper">
                         <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2301&auto=format&fit=crop"
+                            src={heroImg}
                             alt="Strategic Vision"
                             className="hero-image"
                         />
@@ -42,7 +50,7 @@ const Home = () => {
                         {/* Perspective Card 1 */}
                         <article className="insight-card">
                             <div className="card-image">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="Teamwork" />
+                                <img src={insight1Img} alt="Teamwork" />
                             </div>
                             <div className="card-content">
                                 <span className="card-category">Perspektif</span>
@@ -55,7 +63,7 @@ const Home = () => {
                         {/* Perspective Card 2 */}
                         <article className="insight-card">
                             <div className="card-image">
-                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop" alt="Digital" />
+                                <img src={insight2Img} alt="Digital" />
                             </div>
                             <div className="card-content">
                                 <span className="card-category">Dijital</span>
@@ -68,7 +76,7 @@ const Home = () => {
                         {/* Perspective Card 3 */}
                         <article className="insight-card">
                             <div className="card-image">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" alt="Growth" />
+                                <img src={insight3Img} alt="Growth" />
                             </div>
                             <div className="card-content">
                                 <span className="card-category">Strateji</span>

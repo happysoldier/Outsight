@@ -10,9 +10,10 @@
   /* Near Black */
   --color-text-secondary: #555555;
   /* Dark Grey */
-  --color-accent: #A6192E;
-  /* Kearney-like Deep Red */
-  --color-accent-hover: #8A1225;
+  --color-accent: #ff3b30;
+  /* Brand Green */
+  --color-accent-hover: #d63228;
+
   --color-border: #E5E5E5;
   --color-white: #FFFFFF;
 

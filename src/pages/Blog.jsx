@@ -192,7 +192,7 @@ const Blog = () => {
                                 {visibleCount < filteredPosts.length && (
                                     <div className="load-more-container">
                                         <button className="load-more-button" onClick={handleLoadMore}>
-                                            DAHA FAZLA YÜKLE
+                                            Daha Fazla Yükle
                                         </button>
                                     </div>
                                 )}

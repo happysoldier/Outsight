@@ -46,17 +46,19 @@ const Navbar = () => {
                                         <div className="mega-column">
                                             <span className="mega-header">Biz Kimiz</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/about/people" onClick={() => setMegaMenuOpen(false)}>İnsanlarımız</Link></li>
-                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Hikayemiz</Link></li>
-                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Kültür ve Değerler</Link></li>
-                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Liderlik Ekibi</Link></li>
+                                                <li><Link to="/about/people" onClick={() => setMegaMenuOpen(false)}>Ekibimiz</Link></li>
+                                                <li><Link to="/values" onClick={() => setMegaMenuOpen(false)}>Değerlerimiz</Link></li>
+                                                <li><Link to="/sustainability" onClick={() => setMegaMenuOpen(false)}>Sürdürülebilirlik</Link></li>
+                                                <li><Link to="/media" onClick={() => setMegaMenuOpen(false)}>Medya</Link></li>
+                                                <li><Link to="/careers" onClick={() => setMegaMenuOpen(false)}>Kariyer</Link></li>
+                                                <li><Link to="/contact" onClick={() => setMegaMenuOpen(false)}>İletişim</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mega-column">
                                             <span className="mega-header">Neden Outsight</span>
                                             <ul className="mega-list">
                                                 <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Stratejik Ortaklıklar</Link></li>
-                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Sürdürülebilirlik</Link></li>
+                                                <li><Link to="/sustainability" onClick={() => setMegaMenuOpen(false)}>Sürdürülebilirlik</Link></li>
                                             </ul>
                                         </div>
                                         <div className="mega-column">
@@ -69,9 +71,9 @@ const Navbar = () => {
                                         <div className="mega-column">
                                             <span className="mega-header">Daha Fazlası</span>
                                             <ul className="mega-list">
-                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Mezunlar</Link></li>
-                                                <li><Link to="/contact" onClick={() => setMegaMenuOpen(false)}>Ofisler</Link></li>
-                                                <li><Link to="/about" onClick={() => setMegaMenuOpen(false)}>Medya</Link></li>
+
+
+                                                <li><Link to="/media" onClick={() => setMegaMenuOpen(false)}>Medya</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -79,6 +81,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <Link to="/services" className="nav-item">Hizmetler</Link>
+                        <Link to="/careers" className="nav-item">Kariyer</Link>
                         <Link to="/blog" className="nav-item">Öngörüler</Link>
                         <Link to="/contact" className="nav-item">İletişim</Link>
                     </div>

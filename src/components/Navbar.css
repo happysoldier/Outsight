@@ -59,7 +59,13 @@
     color: var(--color-text-primary);
     text-decoration: none;
     position: relative;
+    transition: color var(--transition-fast);
 }
+
+.nav-item:hover {
+    color: var(--color-accent);
+}
+
 
 .nav-item::after {
     content: '';

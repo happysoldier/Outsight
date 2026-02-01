@@ -6,13 +6,21 @@ const Services = () => {
     const services = [
         {
             id: 1,
-            title: "Stratejik İş Geliştirme",
-            description: "Pazar giriş stratejileri, büyüme haritaları ve rekabetçi konumlandırma.",
+            title: "Yeni Marka & Yapı Kurulumu",
+            description: "Fikir aşamasından pazar liderliğine; sağlam stratejik temel ve sürdürülebilir operasyonel yapı kurulumu.",
+            link: "/services/yeni-marka-yapi-kurulumu"
+        },
+        {
+            id: 5,
+            title: "Birleşme ve Devralmalar",
+            description: "Bir sonraki satın alımınızdan entegrasyona kadar; inorganik büyümenin her adımında değer yaratan stratejik ortaklık.",
+            link: "/services/birlesme-ve-devralmalar"
         },
         {
             id: 2,
             title: "Finansal & Stratejik Danışmanlık",
             description: "Sermaye dağılımı, risk yönetimi ve istikrar için finansal modelleme.",
+            link: "/services/finansal-ve-stratejik-danismanlik"
         },
         {
             id: 3,
@@ -20,9 +28,46 @@ const Services = () => {
             description: "Marka kimliği, müşteri yolculuğu haritalaması ve UX mimarisi.",
         },
         {
-            id: 4,
+            id: 3,
             title: "Operasyon & Satış Yapıları",
-            description: "Süreç optimizasyonu, satış kanalı verimliliği ve tedarik zinciri mantığı.",
+            description: "Verimlilik, otomasyon ve satış ekiplerinin performans optimizasyonu.",
+            link: "/services/operasyon-satis-dagitim-yapilari"
+        },
+        {
+            id: 4,
+            title: "Marka, İletişim & Deneyim Tasarımı",
+            description: "Kalıcı duygusal bağlar ve akılda kalıcı marka deneyimleri kurgulamak.",
+            link: "/services/marka-iletisim-deneyim-tasarimi"
+        },
+        {
+            id: 6,
+            title: "Mevcut Markaların Dönüşümü",
+            description: "Köklü markaları yarının dünyasına hazırlamak için stratejik evrim.",
+            link: "/services/mevcut-markalarin-donusumu"
+        },
+        {
+            id: 7,
+            title: "İş Süreçleri & Toplam Kalite",
+            description: "Operasyonel verimlilik ve sürdürülebilir kalite standartları kurgulamak.",
+            link: "/services/is-surecleri-toplam-kalite"
+        },
+        {
+            id: 8,
+            title: "İnsan Kaynakları & Organizasyon",
+            description: "Yüksek performanslı ekipler ve çevik organizasyonel yapılar tasarlamak.",
+            link: "/services/insan-kaynaklari-organizasyon"
+        },
+        {
+            id: 10,
+            title: "Dijital Performans",
+            description: "Veri odaklı dijital büyüme ve performans pazarlaması stratejileri.",
+            link: "/services/dijital-performans"
+        },
+        {
+            id: 11,
+            title: "Stratejik İş Geliştirme & Büyüme Mimarlığı",
+            description: "Analiz, optimizasyon ve ölçeklenebilir büyüme kurguları tasarlamak.",
+            link: "/services/stratejik-is-gelistirme-buyume-mimarligi"
         }
     ];
 
@@ -45,7 +90,7 @@ const Services = () => {
                             </div>
                             <div className="service-desc">
                                 <p>{service.description}</p>
-                                <Link to="/contact" className="btn-link">Daha fazla bilgi</Link>
+                                <Link to={service.link || "/contact"} className="btn-link">Daha fazla bilgi</Link>
                             </div>
                         </div>
                     ))}

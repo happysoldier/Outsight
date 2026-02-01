@@ -1,19 +1,27 @@
 /* Sustainability Page Styles */
 .sustainability-page {
-    background-color: var(--color-white);
+    font-family: 'Public Sans', sans-serif;
+    padding-top: 0;
 }
 
+/* Container standardization */
+.sustainability-page .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 192px;
+}
+
+/* Hero Section */
 .sustainability-hero {
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
     position: relative;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
     padding: 4rem 0;
-    color: #fff;
-    margin-bottom: 0;
 }
 
 .sustainability-hero::before {
@@ -24,62 +32,59 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
+    /* Overlay for better text readability */
+    z-index: 1;
 }
 
 .sustainability-hero .container {
     position: relative;
-    z-index: 2;
-    width: 100%;
+    z-index: 10;
     text-align: center;
-    margin-top: 5rem;
-}
-
-.sustainability-hero .chapter-scent {
-    color: #fff;
-    opacity: 0.9;
-    margin-bottom: 1rem;
-    display: block;
-    font-size: 1.1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
+    max-width: 1056px;
+    padding: 0 !important;
 }
 
 .sustainability-hero h1 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 1.1;
-    color: #fff;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -2px;
+    text-align: center;
 }
 
+/* Content Section */
 .sustainability-content {
-    padding: 5rem 0 0rem 0;
-    color: var(--color-text-primary);
-    line-height: 1.6;
-    font-size: 1.1rem;
+    padding: 4rem 0;
 }
 
 .sustainability-intro {
-    max-width: 800px;
-    margin: 0 auto 4rem;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
     text-align: center;
-    font-size: 1.25rem;
-    color: var(--color-text-primary);
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
 }
 
+/* Pillars Grid */
 .pillars-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .pillar-card {
-    background-color: var(--color-bg-secondary);
+    background: #fff;
     padding: 2.5rem;
-    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #1A1A1A;
+    text-align: left;
     transition: transform 0.3s ease;
 }
 
@@ -88,41 +93,73 @@
 }
 
 .pillar-card h3 {
-    font-size: 1.5rem;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1A1A1A;
     margin-bottom: 1rem;
-    color: var(--color-text-primary);
 }
 
 .pillar-card p {
-    color: var(--color-text-secondary);
-    font-size: 1rem;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #555555;
+    font-weight: 300;
     margin-bottom: 0;
 }
 
+/* Commitment Section */
 .sustainability-commitment {
-    background-color: var(--color-accent);
-    color: #fff;
-    padding: 4rem 0;
     text-align: center;
-    border-radius: 12px;
-    margin-bottom: 2.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .sustainability-commitment h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #fff;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 1rem;
 }
 
 .sustainability-commitment p {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    opacity: 0.9;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .sustainability-page .container {
+        padding: 0 5%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
     .sustainability-hero h1 {
-        font-size: 3rem;
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sustainability-page .container {
+        padding: 0 24px;
     }
 }

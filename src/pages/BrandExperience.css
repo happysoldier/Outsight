@@ -1,0 +1,311 @@
+/* Brand Experience Page Styles */
+.brand-experience-page {
+    padding-top: 0;
+}
+
+.brand-experience-page .container:not(.cta-section .container) {
+    max-width: 1180px;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* Hero Section - Standard 70vh centering */
+.service-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    padding: 4rem 0;
+}
+
+.service-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+}
+
+.service-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 10;
+    color: #ffffff !important;
+    text-align: center;
+    width: 100%;
+    max-width: 1180px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.service-hero-content h1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    margin: 4rem auto 1rem auto;
+    color: #ffffff !important;
+    text-align: center;
+    max-width: 900px;
+    letter-spacing: -2px;
+}
+
+.hero-tagline {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Common Layout */
+.brand-experience-page .section {
+    padding: 3rem 0;
+}
+
+.brand-experience-page .bg-white {
+    background-color: #fff;
+}
+
+.brand-experience-page .bg-grey {
+    background-color: var(--color-bg-secondary);
+}
+
+.brand-experience-page .section-title {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    font-weight: 400 !important;
+    color: #1A1A1A !important;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.brand-experience-page .subtitle {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 657px;
+    text-align: left;
+}
+
+.brand-experience-page .lead-text {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    max-width: 657px;
+    text-align: left;
+}
+
+/* Service Bullet List */
+.brand-experience-page .service-bullet-list {
+    list-style: none;
+    padding: 0;
+    max-width: 657px;
+}
+
+.brand-experience-page .service-bullet-list li {
+    margin-bottom: 1.5rem;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    position: relative;
+    padding-left: 25px;
+}
+
+.brand-experience-page .service-bullet-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: 300;
+}
+
+.brand-experience-page .service-bullet-list li strong {
+    font-family: 'Public Sans', sans-serif;
+    color: #1A1A1A;
+    font-weight: 400;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Approach List */
+.brand-experience-page .approach-list {
+    max-width: 800px;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.brand-experience-page .approach-item {
+    border-top: 2px solid #1A1A1A;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.brand-experience-page .approach-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 0 0 250px;
+    /* Fixed width for icon + title */
+}
+
+.brand-experience-page .num-badge {
+    width: 30px;
+    height: 38px;
+    background-color: var(--color-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.brand-experience-page .approach-item h3 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.brand-experience-page .approach-content {
+    flex: 1;
+}
+
+.brand-experience-page .approach-item p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin: 0;
+}
+
+/* Target Grid */
+.brand-experience-page .target-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.brand-experience-page .target-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-left: 4px solid var(--color-accent);
+}
+
+.brand-experience-page .target-card h4 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 0.75rem;
+}
+
+.brand-experience-page .target-card p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+/* Adjust gap between Content and CTA */
+.brand-experience-page .section:has(.target-grid),
+.brand-experience-page .section:has(.service-bullet-list),
+.brand-experience-page .section:has(.approach-list) {
+    padding-bottom: 0 !important;
+}
+
+.brand-experience-page .cta-section {
+    padding: 3rem 0 3rem 0 !important;
+}
+
+/* CTA */
+.brand-experience-page .cta-box {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: 0;
+}
+
+.brand-experience-page .cta-box h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 1rem;
+}
+
+.brand-experience-page .cta-box p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+
+    .approach-list,
+    .target-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-experience-page .approach-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .brand-experience-page .approach-header {
+        flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero-content h1 {
+        font-size: 3rem;
+    }
+}

@@ -10,6 +10,7 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+    const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
     const location = useLocation();
 
     useEffect(() => {
@@ -23,6 +24,7 @@ const Navbar = () => {
     // Close mega menu on route change
     useEffect(() => {
         setMegaMenuOpen(false);
+        setServicesMenuOpen(false);
     }, [location]);
 
     return (
@@ -80,7 +82,40 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <Link to="/services" className="nav-item">Hizmetler</Link>
+                        <div
+                            className={`nav-item-wrapper ${servicesMenuOpen ? 'menu-open' : ''}`}
+                            onMouseEnter={() => setServicesMenuOpen(true)}
+                            onMouseLeave={() => setServicesMenuOpen(false)}
+                        >
+                            <Link to="/services" className="nav-item">Hizmetler</Link>
+                            <div className="mega-menu">
+                                <div className="container">
+                                    <div className="mega-breadcrumb">Hizmetler</div>
+                                    <div className="mega-menu-grid services-grid">
+                                        <div className="mega-column">
+                                            <span className="mega-header">Strateji & Yapılanma</span>
+                                            <ul className="mega-list">
+                                                <li><Link to="/services/yeni-marka-yapi-kurulumu" onClick={() => setServicesMenuOpen(false)}>Yeni Marka & Yapı Kurulumu</Link></li>
+                                                <li><Link to="/services/birlesme-ve-devralmalar" onClick={() => setServicesMenuOpen(false)}>Birleşme ve Devralmalar</Link></li>
+                                                <li><Link to="/services/finansal-ve-stratejik-danismanlik" onClick={() => setServicesMenuOpen(false)}>Finansal & Stratejik Danışmanlık</Link></li>
+                                                <li><Link to="/services/insan-kaynaklari-organizasyon" onClick={() => setServicesMenuOpen(false)}>İnsan Kaynakları & Organizasyon</Link></li>
+                                                <li><Link to="/services/stratejik-is-gelistirme-buyume-mimarligi" onClick={() => setServicesMenuOpen(false)}>Stratejik İş Geliştirme & Büyüme Mimarlığı</Link></li>
+                                            </ul>
+                                        </div>
+                                        <div className="mega-column">
+                                            <span className="mega-header">Deneyim & Operasyon</span>
+                                            <ul className="mega-list">
+                                                <li><Link to="/services/marka-iletisim-deneyim-tasarimi" onClick={() => setServicesMenuOpen(false)}>Marka, İletişim & Deneyim Tasarımı</Link></li>
+                                                <li><Link to="/services/mevcut-markalarin-donusumu" onClick={() => setServicesMenuOpen(false)}>Mevcut Markaların Dönüşümü</Link></li>
+                                                <li><Link to="/services/is-surecleri-toplam-kalite" onClick={() => setServicesMenuOpen(false)}>İş Süreçleri & Toplam Kalite</Link></li>
+                                                <li><Link to="/services/dijital-performans" onClick={() => setServicesMenuOpen(false)}>Dijital Performans</Link></li>
+                                                <li><Link to="/services/operasyon-satis-dagitim-yapilari" onClick={() => setServicesMenuOpen(false)}>Operasyon & Satış Yapıları</Link></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <Link to="/careers" className="nav-item">Kariyer</Link>
                         <Link to="/blog" className="nav-item">Öngörüler</Link>
                         <Link to="/contact" className="nav-item">İletişim</Link>

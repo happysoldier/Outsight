@@ -1,0 +1,296 @@
+.brand-structure-page {
+    padding-top: 0;
+}
+
+.brand-structure-page .container:not(.cta-section .container) {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 192px;
+}
+
+/* Hero Section */
+.service-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    padding: 4rem 0;
+}
+
+.service-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+}
+
+.service-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 1056px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.service-hero-content h1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    margin: 4rem auto 1rem auto;
+    color: #ffffff !important;
+    text-align: center;
+    max-width: 900px;
+    letter-spacing: -2px;
+}
+
+.hero-tagline {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Common Layout */
+.section {
+    padding: 3rem 0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* Section Title */
+.brand-structure-page .section-title {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    font-weight: 400 !important;
+    color: #1A1A1A !important;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.subtitle {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #1A1A1A;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 657px;
+    text-align: left;
+}
+
+.brand-structure-page .lead-text {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    max-width: 657px;
+    text-align: left;
+}
+
+/* Service Bullet List */
+.service-bullet-list,
+.simple-bullet-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    max-width: 657px;
+}
+
+/* Top List (Service Scope) */
+.service-bullet-list li {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    padding-left: 25px;
+}
+
+.brand-structure-page .service-bullet-list li:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Reduce gap between Service Scope list and Values Image */
+.brand-structure-page .section:has(.service-bullet-list) {
+    padding-bottom: 1.5rem !important;
+}
+
+.brand-structure-page .section:has(.brand-values-block) {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+
+.brand-structure-page .differences-section {
+    padding-top: 1.5rem !important;
+}
+
+/* Bottom Numbered List (Outsight Difference) */
+/* Bottom Numbered List (Outsight Difference) */
+.differences-section .simple-bullet-list li {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin-bottom: 1.5rem !important;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-bullet-list li::before,
+.simple-bullet-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+.service-bullet-list li strong,
+.simple-bullet-list li strong {
+    font-family: 'Public Sans', sans-serif;
+    color: #1A1A1A;
+    font-weight: 400;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+/* Outsight Farkı Specifics */
+/* Outsight Farkı Specifics */
+.differences-section p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    max-width: 657px;
+}
+
+/* Adjust gap between Content and CTA */
+.brand-structure-page .differences-section,
+.brand-structure-page .section:has(.brand-values-block),
+.brand-structure-page .section:has(.service-bullet-list) {
+    padding-bottom: 0 !important;
+}
+
+.brand-structure-page .cta-section {
+    padding: 3rem 0 3rem 0 !important;
+}
+
+/* CTA */
+.cta-box {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cta-box h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 1rem;
+}
+
+.cta-box p {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+}
+
+/* Intro Grid */
+.intro-grid {
+    display: block;
+}
+
+/* Brand Values Image */
+/* Adjust gap between Intro Text and Service Section */
+.brand-structure-page .section:has(.intro-grid) {
+    padding-bottom: 0 !important;
+}
+
+.brand-structure-page .intro-text .lead-text {
+    margin-bottom: 0 !important;
+}
+
+.brand-structure-page .section:has(.service-bullet-list) {
+    padding-top: 2rem !important;
+}
+
+.brand-structure-page .section:has(.service-bullet-list) .section-title {
+    margin-top: 0 !important;
+}
+
+.brand-values-block {
+    margin-bottom: 1rem;
+    max-width: 657px;
+    position: relative;
+    /* Context for absolute icon */
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1200px) {
+    .brand-structure-page .container:not(.cta-section .container) {
+        padding: 0 5%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero-content h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .brand-structure-page .container:not(.cta-section .container) {
+        padding: 0 24px;
+    }
+}

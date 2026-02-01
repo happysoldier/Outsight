@@ -1,0 +1,365 @@
+/* Quality Management Page Styles */
+.quality-management-page {
+    padding-top: 0;
+}
+
+.quality-management-page .container:not(.cta-section .container) {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 192px;
+}
+
+/* Hero Section */
+.service-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    padding: 4rem 0;
+}
+
+.service-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+}
+
+.service-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 10;
+    color: #ffffff !important;
+    text-align: center;
+    width: 100%;
+    max-width: 1056px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.service-hero-content h1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    margin: 4rem auto 1rem auto;
+    color: #ffffff !important;
+    text-align: center;
+    max-width: 900px;
+    letter-spacing: -2px;
+}
+
+.hero-tagline {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Layout */
+.section {
+    padding: 3rem 0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-grey {
+    background-color: #F8F9FA;
+}
+
+.section-title {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    font-weight: 400 !important;
+    color: #1A1A1A !important;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.subtitle {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #1A1A1A;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 657px;
+    text-align: left;
+}
+
+/* Adjust gap between Intro and Why section */
+.quality-management-page .section:has(.lead-text),
+.quality-management-page .section:has(.description-text),
+.quality-management-page .section:has(.scope-list) {
+    padding-bottom: 0 !important;
+}
+
+.quality-management-page .section:has(.lead-text)+.section,
+.quality-management-page .section:has(.description-text)+.section,
+.quality-management-page .section:has(.scope-list)+.section {
+    padding-top: 2rem !important;
+}
+
+.quality-management-page .lead-text,
+.quality-management-page .description-text,
+.quality-management-page .scope-item p,
+.quality-management-page .approach-item p,
+.quality-management-page .service-bullet-list li,
+.quality-management-page .cta-box p {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+    color: #1A1A1A !important;
+    /* Uniform text color based on standard */
+    font-weight: 100 !important;
+    max-width: 657px;
+    text-align: left;
+}
+
+.lead-text,
+.description-text {
+    margin-bottom: 0 !important;
+    /* Removed bottom margin to keep section padding as the primary driver */
+}
+
+/* Transformation Journey (Scope List) */
+.quality-management-page .transformation-journey-container {
+    max-width: 657px;
+    margin-top: 3rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.quality-management-page .journey-line {
+    position: absolute;
+    left: 4px;
+    top: 10px;
+    bottom: 20px;
+    width: 2px;
+    background-color: #E5E5E5;
+}
+
+.quality-management-page .journey-step {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.quality-management-page .journey-step:last-child {
+    margin-bottom: 0;
+}
+
+.quality-management-page .journey-marker {
+    position: absolute;
+    left: -2rem;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px #fff;
+    z-index: 2;
+}
+
+.quality-management-page .journey-content strong {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #1A1A1A !important;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.quality-management-page .journey-content p {
+    margin: 0 !important;
+    /* Rules already handled by global specification */
+}
+
+/* Approach List */
+.quality-management-page .approach-list {
+    max-width: 657px;
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.quality-management-page .approach-item {
+    border-top: 2px solid #1A1A1A;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.quality-management-page .approach-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 0 0 200px;
+}
+
+.quality-management-page .num-badge {
+    width: 30px;
+    height: 38px;
+    background-color: var(--color-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.quality-management-page .approach-item h3 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.quality-management-page .approach-content {
+    flex: 1;
+}
+
+.quality-management-page .approach-item p {
+    margin: 0;
+}
+
+.quality-management-page .approach-item:last-child {
+    margin-bottom: 0;
+}
+
+.quote-box {
+    margin-top: 3rem;
+    margin-bottom: 0;
+    padding: 3rem;
+    background: #fff;
+    border-left: 5px solid #1A1A1A;
+    font-style: italic;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1A1A1A;
+    font-weight: 300;
+    max-width: 657px;
+}
+
+/* Bullet List */
+.service-bullet-list {
+    list-style: none;
+    padding: 0;
+    max-width: 657px;
+}
+
+.service-bullet-list li {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-weight: 100;
+}
+
+.service-bullet-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+/* Adjust gap between Content and CTA */
+.quality-management-page .section:has(.service-bullet-list),
+.quality-management-page .section:has(.approach-list),
+.quality-management-page .section:has(.transformation-journey-container) {
+    padding-bottom: 0 !important;
+}
+
+.quality-management-page .cta-section {
+    padding: 3rem 0 3rem 0 !important;
+}
+
+/* CTA */
+.cta-box {
+    text-align: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: 0;
+}
+
+.cta-box h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #1A1A1A;
+}
+
+/* CTA specific text layout */
+.cta-box p {
+    margin-bottom: 1.5rem;
+    text-align: center !important;
+    /* Keep CTA centered */
+    max-width: 100% !important;
+}
+
+@media (max-width: 1200px) {
+    .quality-management-page .container:not(.cta-section .container) {
+        padding: 0 5%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .service-grid,
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-hero-content h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .service-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quality-management-page .container:not(.cta-section .container) {
+        padding: 0 24px;
+    }
+}

@@ -109,7 +109,7 @@ const Home = () => {
                                     <Link to="/services">Deneyim Mimarisi <span className="arrow">→</span></Link>
                                 </li>
                                 <li>
-                                    <Link to="/services">Operasyon & Satış Yapıları <span className="arrow">→</span></Link>
+                                    <Link to="/services/operasyon-satis-dagitim-yapilari">Operasyon & Satış Yapıları <span className="arrow">→</span></Link>
                                 </li>
                             </ul>
                         </div>

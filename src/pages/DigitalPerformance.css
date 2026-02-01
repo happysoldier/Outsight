@@ -1,0 +1,350 @@
+/* Digital Performance Page Styles - Outsight Standard */
+.digital-performance-page {
+    font-family: 'Public Sans', sans-serif;
+    padding-top: 0;
+}
+
+.digital-performance-page .container:not(.cta-section .container) {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 192px;
+}
+
+/* Hero Section */
+.service-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+    padding: 4rem 0;
+}
+
+.service-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+}
+
+.service-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 1056px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.service-hero-content h1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    margin: 0 auto 1rem auto;
+    letter-spacing: -2px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-tagline {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    line-height: 28px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Intro Text */
+.intro-text {
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.digital-performance-page .lead-text,
+.digital-performance-page .description-text,
+.digital-performance-page .pillar-text,
+.digital-performance-page .approach-item p,
+.digital-performance-page .service-bullet-list li,
+.digital-performance-page .cta-box p {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+    color: #1A1A1A !important;
+    font-weight: 100 !important;
+    max-width: 657px;
+    text-align: left;
+}
+
+.digital-performance-page .lead-text {
+    max-width: 800px;
+    /* Lead text stays slightly focused but wider than 657px */
+    margin-bottom: 0 !important;
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Editorial Scope List */
+.digital-performance-page .scope-list {
+    max-width: 657px;
+    margin-top: 3rem;
+}
+
+.digital-performance-page .scope-item {
+    border-top: 1px solid #E5E5E5;
+    padding-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.digital-performance-page .scope-item:last-child {
+    margin-bottom: 0;
+}
+
+.digital-performance-page .scope-number {
+    display: block;
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: var(--color-accent) !important;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+}
+
+.digital-performance-page .scope-item .scope-title {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    color: #1A1A1A !important;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.digital-performance-page .scope-item p {
+    margin: 0 !important;
+}
+
+/* Approach List */
+.digital-performance-page .section-title {
+    font-family: 'Public Sans', sans-serif !important;
+    font-size: 36px !important;
+    line-height: 42px !important;
+    font-weight: 400 !important;
+    color: #1A1A1A !important;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.digital-performance-page .approach-item {
+    border-top: 2px solid #1A1A1A;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.digital-performance-page .approach-list {
+    max-width: 657px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.digital-performance-page .approach-item {
+    border-top: 2px solid #1A1A1A;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.digital-performance-page .approach-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 0 0 100px;
+    /* Reduced since no icons */
+}
+
+.digital-performance-page .num-badge {
+    width: 30px;
+    height: 38px;
+    background-color: var(--color-accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.digital-performance-page .approach-item h3 {
+    display: none;
+    /* Already using standard grouping if needed, but here we want title next to badge */
+}
+
+.digital-performance-page .approach-header h3 {
+    display: block;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.digital-performance-page .approach-content {
+    flex: 1;
+}
+
+.digital-performance-page .approach-item p {
+    margin: 0 !important;
+}
+
+.digital-performance-page .approach-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Quote */
+.digital-performance-page .large-quote {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    max-width: 657px;
+    margin: 3rem 0 !important;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #1A1A1A;
+    font-style: italic;
+}
+
+/* Adjust gap between Content sections */
+.digital-performance-page .section:has(.lead-text),
+.digital-performance-page .section:has(.scope-list),
+.digital-performance-page .section:has(.large-quote) {
+    padding-bottom: 0 !important;
+}
+
+.digital-performance-page .section:has(.lead-text)+.section,
+.digital-performance-page .section:has(.scope-list)+.section,
+.digital-performance-page .section:has(.large-quote)+.section {
+    padding-top: 2rem !important;
+}
+
+/* Adjust gap between Content and CTA */
+.digital-performance-page .section:has(.approach-list) {
+    padding-bottom: 0 !important;
+}
+
+.digital-performance-page .cta-section {
+    padding: 3rem 0 3rem 0 !important;
+    background-color: #ffffff;
+}
+
+.cta-box {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.cta-box h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-bottom: 1rem;
+}
+
+.cta-box p {
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+    max-width: 100% !important;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #1A1A1A;
+    color: #ffffff;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    border: 1px solid #1A1A1A;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #1A1A1A;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .digital-performance-page .container:not(.cta-section .container) {
+        padding: 0 5%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Responsive adjustments for vertical list if needed */
+}
+
+@media (max-width: 768px) {
+    .service-hero-content h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .digital-performance-page .container:not(.cta-section .container) {
+        padding: 0 24px;
+    }
+
+    .large-quote {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}

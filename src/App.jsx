@@ -20,6 +20,16 @@ import Media from './pages/Media';
 import Sustainability from './pages/Sustainability';
 import Careers from './pages/Careers';
 import PersonContactBio from './pages/PersonContactBio';
+import BrandStructure from './pages/BrandStructure';
+import MergersAcquisitions from './pages/MergersAcquisitions';
+import FinancialAdvisory from './pages/FinancialAdvisory';
+import BrandExperience from './pages/BrandExperience';
+import BrandTransformation from './pages/BrandTransformation';
+import QualityManagement from './pages/QualityManagement';
+import HumanResources from './pages/HumanResources';
+import DigitalPerformance from './pages/DigitalPerformance';
+import StrategicBusinessDevelopment from './pages/StrategicBusinessDevelopment';
+import OperationSalesDistribution from './pages/OperationSalesDistribution';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import PrivacyModal from './components/PrivacyModal';
@@ -42,6 +52,16 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/contact/bio/:name" element={<PersonContactBio />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/yeni-marka-yapi-kurulumu" element={<BrandStructure />} />
+            <Route path="/services/birlesme-ve-devralmalar" element={<MergersAcquisitions />} />
+            <Route path="/services/finansal-ve-stratejik-danismanlik" element={<FinancialAdvisory />} />
+            <Route path="/services/marka-iletisim-deneyim-tasarimi" element={<BrandExperience />} />
+            <Route path="/services/mevcut-markalarin-donusumu" element={<BrandTransformation />} />
+            <Route path="/services/is-surecleri-toplam-kalite" element={<QualityManagement />} />
+            <Route path="/services/insan-kaynaklari-organizasyon" element={<HumanResources />} />
+            <Route path="/services/dijital-performans" element={<DigitalPerformance />} />
+            <Route path="/services/operasyon-satis-dagitim-yapilari" element={<OperationSalesDistribution />} />
+            <Route path="/services/stratejik-is-gelistirme-buyume-mimarligi" element={<StrategicBusinessDevelopment />} />
             <Route path="/values" element={<Values />} />
             <Route path="/media" element={<Media />} />
             <Route path="/sustainability" element={<Sustainability />} />

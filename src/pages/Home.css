@@ -147,18 +147,22 @@
 
 .slider-container {
     display: flex;
-    min-height: 500px;
-    max-width: 1440px;
-    margin: 0 auto;
+    height: calc(100vh - 80px);
+    /* Exact viewport height minus navbar */
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 .slider-content {
     flex: 1;
-    padding: 6rem 4rem 4rem 8rem;
+    padding: 8rem 5% 8rem 8rem;
+    /* Use percentage right padding to keep text area clean */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     position: relative;
+    height: 100%;
+    background-color: #fff;
 }
 
 .slider-tag {
@@ -169,18 +173,18 @@
 }
 
 .slider-title {
-    font-size: 3rem;
-    line-height: 1.1;
-    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+    font-weight: 400;
     margin-bottom: 3rem;
-    max-width: 500px;
-    color: var(--color-text-primary);
+    max-width: 600px;
+    color: #000;
 }
 
 .slider-btn {
     display: inline-block;
-    padding: 0.75rem 2rem;
-    border: 1px solid var(--color-accent);
+    padding: 0.50rem 2.0rem;
+    border: 1.5px solid var(--color-accent);
     color: var(--color-accent);
     text-decoration: none;
     font-weight: 500;
@@ -208,8 +212,13 @@
 .slider-controls {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: auto;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 2rem;
+    left: 8rem;
+    /* Aligning with .slider-content padding-left */
+    right: 4rem;
+    /* Aligning with .slider-content padding-right */
 }
 
 .control-btn {
@@ -219,7 +228,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    /* Removing horizontal padding to align exactly with text edge */
     transition: transform 0.2s ease;
 }
 

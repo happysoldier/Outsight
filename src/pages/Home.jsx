@@ -13,7 +13,19 @@ import insight3Img from '../assets/innovative-strategies-hero.png'; // Growth/St
 const Home = () => {
     return (
         <div className="home-page">
-            {/* Editorial Hero Section */}
+            {/* Featured Insight - Kearney Style (Main Hero) */}
+            <section className="featured-insight">
+                <div className="featured-bg">
+                    <img src={heroImg} alt="Modern Pazarlama" />
+                </div>
+                <div className="container featured-content">
+                    <h2 className="featured-title">Modern Pazarlama: Megafonla Bağırmak Değil, Mıknatısla Çekmektir</h2>
+                    <p className="featured-date">24 Ocak 2026</p>
+                    <Link to="/blog/modern-pazarlama-megafonla-bagirmak-degil-miknatisla-cekmektir" className="btn-ghost">Daha Fazlasını Keşfedin</Link>
+                </div>
+            </section>
+
+            {/* Editorial Hero Section (Now secondary) */}
             <section className="hero-section">
                 <div className="container hero-container">
                     <div className="hero-content">

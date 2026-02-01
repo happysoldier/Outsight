@@ -155,14 +155,16 @@
 }
 
 .slider-content {
-    flex: 1;
-    padding: 8rem 5% 8rem 8rem;
-    /* Use percentage right padding to keep text area clean */
+    flex: 0 0 50%;
+    padding: 8rem;
+    /* Symmetric padding */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     height: 100%;
-    background-color: #fff;
+    background-color: #ffffff;
+    box-sizing: border-box;
 }
 
 .slider-tag {
@@ -176,7 +178,8 @@
     font-size: 44px;
     line-height: 48px;
     font-weight: 400;
-    margin-bottom: 3rem;
+    /* Clean editorial weight */
+    margin-bottom: 2.5rem;
     max-width: 600px;
     color: #000;
 }
@@ -199,8 +202,10 @@
 }
 
 .slider-image {
-    flex: 1;
+    flex: 0 0 50%;
+    /* Explicitly 50% width */
     background-color: #000;
+    overflow: hidden;
 }
 
 .slider-image img {
@@ -214,11 +219,10 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 8rem;
-    /* Aligning with .slider-content padding-left */
-    right: 4rem;
-    /* Aligning with .slider-content padding-right */
+    right: 8rem;
+    width: auto;
 }
 
 .control-btn {
@@ -229,8 +233,13 @@
     align-items: center;
     justify-content: center;
     padding: 0.5rem 0;
-    /* Removing horizontal padding to align exactly with text edge */
     transition: transform 0.2s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.control-btn:focus {
+    outline: none;
 }
 
 .control-btn:hover {

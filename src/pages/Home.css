@@ -156,8 +156,7 @@
 
 .slider-content {
     flex: 0 0 50%;
-    padding: 8rem;
-    /* Symmetric padding */
+    padding: 8rem 0 0 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,7 +178,8 @@
     line-height: 48px;
     font-weight: 400;
     /* Clean editorial weight */
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+    /* Reduced gap */
     max-width: 600px;
     color: #000;
 }
@@ -192,8 +192,13 @@
     text-decoration: none;
     font-weight: 500;
     width: fit-content;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
+    /* Reduced gap */
     transition: all 0.3s ease;
+}
+
+.slider-btn:focus {
+    outline: none;
 }
 
 .slider-btn:hover {
@@ -220,9 +225,14 @@
     justify-content: space-between;
     position: absolute;
     bottom: 4rem;
+    /* Aligned vertically with text padding rhythm */
     left: 8rem;
-    right: 8rem;
+    /* Aligned with "Article" and title */
+    right: 0;
+    /* Flush with image on the right */
     width: auto;
+    padding-right: 2rem;
+    /* Give arrow slight breathing room or set to 0 to touch */
 }
 
 .control-btn {

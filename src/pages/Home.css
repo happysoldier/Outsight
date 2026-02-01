@@ -139,6 +139,125 @@
     color: #000;
 }
 
+/* Article Slider Section */
+.article-slider {
+    background-color: #fff;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.slider-container {
+    display: flex;
+    min-height: 500px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    flex: 1;
+    padding: 6rem 4rem 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-tag {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.slider-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    max-width: 500px;
+    color: var(--color-text-primary);
+}
+
+.slider-btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: 4rem;
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.slider-image {
+    flex: 1;
+    background-color: #000;
+}
+
+.slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: auto;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.control-btn:hover {
+    transform: scale(1.2);
+}
+
+.slider-indicators {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--color-accent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--color-accent);
+}
+
+@media (max-width: 1024px) {
+    .slider-container {
+        flex-direction: column;
+    }
+
+    .slider-content {
+        padding: 4rem 2rem;
+    }
+
+    .slider-title {
+        font-size: 2.25rem;
+    }
+}
+
 .insights-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

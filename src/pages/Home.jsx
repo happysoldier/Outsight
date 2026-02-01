@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { blogPosts } from '../data/blogData';
 import './Home.css';
 
 // Import Hero Image (using a fitting strategic/modern image)
@@ -11,6 +12,27 @@ import insight2Img from '../assets/future-of-digital-marketing-hero.png'; // Dig
 import insight3Img from '../assets/innovative-strategies-hero.png'; // Growth/Strategy
 
 const Home = () => {
+    const [randomPosts, setRandomPosts] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        // Get 5 random posts
+        const shuffled = [...blogPosts].sort(() => 0.5 - Math.random());
+        setRandomPosts(shuffled.slice(0, 5));
+    }, []);
+
+    const nextSlide = () => {
+        setCurrentIndex((prev) => (prev + 1) % randomPosts.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prev) => (prev - 1 + randomPosts.length) % randomPosts.length);
+    };
+
+    if (randomPosts.length === 0) return null;
+
+    const currentPost = randomPosts[currentIndex];
+
     return (
         <div className="home-page">
             {/* Featured Insight - Kearney Style (Main Hero) */}
@@ -22,6 +44,38 @@ const Home = () => {
                     <h2 className="featured-title">Modern Pazarlama: Megafonla Bağırmak Değil, Mıknatısla Çekmektir</h2>
                     <p className="featured-date">24 Ocak 2026</p>
                     <Link to="/blog/modern-pazarlama-megafonla-bagirmak-degil-miknatisla-cekmektir" className="btn-ghost">Daha Fazlasını Keşfedin</Link>
+                </div>
+            </section>
+
+            {/* Article Slider Section */}
+            <section className="article-slider">
+                <div className="slider-container">
+                    <div className="slider-content">
+                        <span className="slider-tag">Article</span>
+                        <h2 className="slider-title">{currentPost.title}</h2>
+                        <Link to={`/blog/${currentPost.slug}`} className="slider-btn">Daha Fazlasını Keşfedin</Link>
+
+                        <div className="slider-controls">
+                            <button className="control-btn prev" onClick={prevSlide}>
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor" /></svg>
+                            </button>
+                            <div className="slider-indicators">
+                                {randomPosts.map((_, index) => (
+                                    <span
+                                        key={index}
+                                        className={`indicator ${index === currentIndex ? 'active' : ''}`}
+                                        onClick={() => setCurrentIndex(index)}
+                                    ></span>
+                                ))}
+                            </div>
+                            <button className="control-btn next" onClick={nextSlide}>
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="slider-image">
+                        <img src={currentPost.image} alt={currentPost.title} />
+                    </div>
                 </div>
             </section>
 
